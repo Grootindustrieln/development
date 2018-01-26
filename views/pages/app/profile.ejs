@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile | Critico</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/theone.css">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/pages.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" href="../../css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/app/app-main.css" media="screen" />
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Fonts -->
+<script src="https://use.fontawesome.com/03f81593ac.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto" rel="stylesheet">
+<script src="/release/11.7.1016/js/dojo/mccommon.js"></script>
+<script type="text/javascript" src="/release/11.7.1016/js/swfobject.js"></script>
+
+</head>
+
+<body class="mcd relative full-height-vh flex flex-col overflow-hidden">
+    <div class="novip">
+        <div class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0">
+            <div class="line selfclear">
+                <% include ../../partials/app/dashboard-nav %>
+            </div>
+        </div>
+        
+    <div id="wrap" class="wrap flex overflow-auto-y overflow-hidden-x">
+        <div id="main-content" class="main-content mc-content flex flex-col selfclear">
+            <div class="lastUnit size1of1 overflow-visible flex-shrink-none">
+                <div id="av-flash-block" class="c-flashBlock"> </div>
+            </div>
+            <div role="main" id="content" class="content selfclear relative">
+                <div class="lastUnit size1of1 header account">
+                    <h1><%= company.name %></h1>
+                    <h4><%= user.emailaddress %></h4>
+                </div>
+                <div class="line local-nav-container">
+                    <div class="lastUnit size1of1">
+                        <div>
+                            <p class="c-menuBarToggle !margin--lv0 full-width padding--lv2 border-top border-bottom font-weight--bold cursor-pointer"> Navigation <span class="freddicon menu-down float-right" role="presentation" aria-hidden="true"></span> </p>
+                            <% include ../../partials/app/profile-nav %>
+                        </div>
+                    </div>
+                </div>
+                <div class="line section">
+                    <form id="security-form" action="" method="POST" novalidate="novalidate">
+                        <div class="unit size1of2 !margin-bottom--lv6">
+                            <fieldset>
+                                <h3 class="profile_header">Basic information</h3>
+                                <div id="basicinfo-fieldset">
+                                    <div id="username-fieldset">
+                                        <div class="field-wrapper">
+                                            <label for="username" class="">Username</label>
+                                            <input type="text" name="username" class=" av-text" value="<%= user.username %>" id="">
+                                        </div>
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="fname" class="">First name</label>
+                                        <input id="fname" type="text" name="fname" class=" av-text" value="<%= user.firstName %>">
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="lname" class="">Last name</label>
+                                        <input id="lname" type="text" name="lname" class=" av-text" value="<%= user.lastName %>">
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="email" class="">Email address</label>
+                                        <input type="email" name="email" class=" av-email" value="<%= user.emailaddress %>" id="email">
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="company" class="">Company Name</label>
+                                        <input id="company" type="text" name="company" class=" av-text" value="<%= company.name %>">
+                                    </div>
+                                    <button class="button p0" type="submit">Update</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="unit size1of2 !margin-bottom--lv6">
+                            <fieldset>
+                                <h3 class="profile_header">Change password</h3>
+                                <div class="field-wrapper">
+                                    <label for="current_password" class="">Verify current password</label>
+                                    <input type="password" name="current_password" autocomplete="off" maxlength="50" class=" av-password" value="" id="current_password">
+                                </div>
+                                <div class="field-wrapper">
+                                <label for="password" class="">New password </label>
+                                <input type="password" class="av-password" name="password" id="password" autocomplete="off" maxlength="51" value="">
+                                    <div class="feedback-block success !margin-bottom--lv4 password-ok hide" role="status">
+                                        <div class="lastUnit size1of1">
+                                            <div class="c-media">
+                                                <div class="c-mediaImage v-isFreddicon">
+                                                    <span class="tick-circle"></span>
+                                                </div>
+                                                <div class="c-mediaBody--centered">
+                                                    <h4>Your password is secure and you're all set!</h4>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-wrapper">
+                                    <label for="confirm_password" class="">Confirm new password</label>
+                                    <input type="password" name="confirm_password" autocomplete="off" maxlength="50" class=" av-password" value="" id="confirm_password">
+                                </div>
+                                <button id="usr-pwd-update"class="button p0" type="submit">Update</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

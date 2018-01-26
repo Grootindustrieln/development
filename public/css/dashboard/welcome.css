@@ -1,0 +1,226 @@
+.welcome-button {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.btn-wide {
+    min-width: 175px;
+}
+
+hr {
+    margin: 20px 0 20px 10px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+}
+
+#getting_started_video {
+    padding: 0 10px;
+    margin: auto;
+}
+
+.big-text {
+    font-size: 1.25em;
+}
+
+.welcome-option {
+    display: block;
+    color: #222;
+    width: calc(100% - 50px);
+    margin: 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    transition: all .15s ease-in-out;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 18px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #d5dadf;
+}
+
+@media screen and (min-width: 992px){
+    #getting_started_video {
+        margin: 0;
+    }
+
+    .welcome-option {
+        margin: 0 20px 0 40px;
+        display: inline-block;
+        width: calc(33% - 50px);
+    }
+
+    .welcome-option + .welcome-option {
+        margin: 0 20px;
+    }
+}
+
+a.welcome-option:hover {
+    text-decoration: none;
+}
+
+.welcome-option figure {
+    padding: 15px 5px 30px;
+}
+
+.welcome-option figcaption {
+    padding: 15px;
+    min-height: 60px;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+#welcome-header {
+    padding-left: 20px;
+}
+
+.welcome-img-wrap {
+    max-width: 300px;
+    display: inline-block;
+}
+
+.welcome-img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.btn-orange {
+    border-radius: .25em;
+    background-color: #ED9840;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: #E08E3D;
+}
+
+.btn-orange:visited {
+    color: #fff;
+}
+
+.btn-orange:active {
+    color: #fff;
+    background-color: #E08E3D;
+}
+
+.btn-green {
+    border-radius: 0px;
+    background-color: #87be45;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-green:hover {
+    color: #fff;
+    background-color: #679333;
+}
+
+.btn-green:visited {
+    color: #fff;
+}
+
+.btn-green:active {
+    color: #fff;
+    background-color: #679333;
+}
+
+.btn-blue {
+    border-radius: 0px;
+    background-color: #0284b4;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #015877;
+}
+
+.btn-blue:visited {
+    color: #fff;
+}
+
+.btn-blue:active {
+    color: #fff;
+    background-color: #015877;
+}
+
+.indent-left {
+    padding-left: 12px;
+}
+
+.welcome-panel {
+    margin: 20px 0;
+}
+
+.welcome-option:hover {
+    background-color: #fff;
+    transform: scale(1.05, 1.05);
+}
+
+.welcome-option:hover .btn-green {
+    background-color: #679333;
+}
+
+.welcome-option:hover .btn-orange {
+    background-color: #E08E3D;
+}
+
+.notification-container {
+    margin: 10px 20px 10px 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+.notification-text {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.notification-title {
+    padding:0;
+}
+
+.code-help-image {
+    max-height: 60px;
+    margin: 35px auto 0px;
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #eee;
+    padding: 5px;
+}
+
+.code-help-notification {
+    border: 1px solid #ddd;
+    margin: 15px 35px 15px 30px;
+    padding: 5px;
+}
+
+.code-help-notification div {
+    width: calc(100px);
+    float: left;
+}
+
+.code-help-notification div + div {
+    width: calc(100% - 100px);
+    float: left;
+}
+
+@media (max-width: 1024px) {
+    #welcome-notification > div {
+        width: calc(100%);
+    }
+    .code-help-notification > div {
+        width: calc(100%);
+    }
+
+    .code-help-notification > div + div {
+        width: calc(100%);
+    }
+}

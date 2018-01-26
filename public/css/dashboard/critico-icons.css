@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'critico-icons';
+  src: url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.eot');
+  src: url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+       url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
+       url('//use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+  speak: none;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font: normal normal normal 14px/1 "critico-icons";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon] {
+  font: normal normal normal 14px/1 "critico-icons";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-control-feedback[class^="icon-"],
+.form-control-feedback[class*=" icon-"] {
+  font-size: 1em;
+  transform: translate(0,25%);
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  speak: none;
+}
+
+.icon-dashboard:before {
+  content: "\f015";
+}
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+
+.icon-envelope-open-o:before {
+  content: "\f2b7";
+}
+
+.icon-landing-page:before {
+  content: "\f247";
+}
+
+.icon-landing-page-code:before {
+  content: "\f1c9";
+}
+
+.icon-profile:before {
+  content: "\f2be";
+}
+
+.icon-account:before {
+  content: "\f2bc";
+}
+
+.icon-billing:before {
+  content: "\f09d";
+}
+
+.icon-integrations:before {
+  content: "\f1d9";
+}
+
+.icon-preferences:before {
+  content: "\f09e";
+}
+
+.icon-form:before {
+  content: "\f233";
+}
+
+.icon-question-o:before {
+  content: "\f29c";
+}
+
+.icon-angle-down:before {
+  content: "\f107";
+}
+
+.icon-circle-arrow-left-o:before {
+  content: "\f18e";
+}
+
+
+.icon-integrations-app:before {
+  content: "\f1d9";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-sync-app:before {
+  content: "\f135";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-download-app:before {
+  content: "\f019";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-sample-app:before {
+  content: "\f2b7";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-mobile-app:before {
+  content: "\f10a";
+  position: absolute;
+  left: 19px;
+  top: 6px;
+}
+
+.icon-fullscreen-app:before {
+  content: "\f108";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-modules-app:before {
+  content: "\f1b3";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-styles-app:before {
+  content: "\f2a1";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.icon-details-app:before {
+  content: "\f02c";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}

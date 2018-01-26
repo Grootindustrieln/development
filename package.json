@@ -1,0 +1,44 @@
+{
+  "name": "critico.io",
+  "version": "0.0.2",
+  "private": true,
+  "author": "Jeffrey Brown, Brent Levi, and Chris Wolf",
+  "main": "app.js",
+  "engines": {
+    "node": ">7.0.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "angular": "*",
+    "async": "*",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "chai": "*",
+    "connect-flash": "*",
+    "connect-form": "*",
+    "cookie-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "formidable": "*",
+    "hubspot": "*",
+    "knex": "^0.13.0",
+    "mailgun-js": "*",
+    "morgan": "*",
+    "pg":"*",
+    "knex":"*",
+    "multer": "*",
+    "nodemailer": "*",
+    "nodemailer-mailgun-transport": "*",
+    "np": "*",
+    "nvm": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "socket.io": "*"
+  }
+}

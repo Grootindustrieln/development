@@ -1,0 +1,834 @@
+
+
+h1 {
+    font: 300 45px/65px "Open Sans", open-sans, sans-serif;
+    margin-bottom: 75px
+}
+
+h2 {
+    font: 300 35px/52px "Open Sans", open-sans, sans-serif;
+    margin-bottom: 55px
+}
+
+h3 {
+    font: 700 40px/1.5em brandon-grotesque, sans-serif;
+    margin-bottom: 18px
+}
+
+.container_body.alt {
+    background-color: #f9f9fa
+}
+
+.container_body.dark-blue {
+    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left bottom,
+	color-stop(0, #222E38),
+	color-stop(1, #4E607A)
+);
+background-image: -o-linear-gradient(left bottom, #222E38 0%, #4E607A 100%);
+background-image: -moz-linear-gradient(left bottom, #222E38 0%, #4E607A 100%);
+background-image: -webkit-linear-gradient(left bottom, #222E38 0%, #4E607A 100%);
+background-image: -ms-linear-gradient(left bottom, #222E38 0%, #4E607A 100%);
+background-image: linear-gradient(to left bottom, #222E38 0%, #4E607A 100%);
+}
+
+
+.container_body .inside:after,
+.container_body .inside:before {
+    content: " ";
+    display: table
+}
+
+.container_body .inside:after {
+    clear: both
+}
+
+.container_body .split {
+    float: left;
+    display: block;
+    margin-right: 3.125%;
+    width: 48.4375%
+}
+
+
+.company .container_body {
+    text-align: center
+}
+
+.company #header p {
+    margin: 250px 0 0;
+    font-size: 20px
+}
+
+
+.company #header .design-at {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font: 600 12px/1.2em "Open Sans", open-sans, sans-serif;
+    color: #8a959e;
+    text-transform: none
+}
+
+.company #header .design-at i {
+    display: inline-block;
+    height: 23px;
+    width: 83px;
+    background-image: url(../images/company-graphics.png);
+    background-position: 0 -6600px;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    margin-right: 3px
+}
+
+.company .co-description {
+    max-width: 690px;
+    margin: 0 auto
+}
+
+.company .co-description p {
+    margin-bottom: 30px
+}
+
+.company blockquote {
+    margin-top: 74px
+}
+
+.company #content {
+    padding-top: 61px;
+    text-align: center
+}
+
+.company #content h2,
+.company #content p {
+    text-align: center
+}
+
+.company #core_values {
+    height: 600px;
+    text-align: center;
+    padding: 0px;
+}
+
+.company #core_values h1 {
+    color: #fff;
+    margin-top: 70px
+}
+
+.company #core_values ul {
+    margin-bottom: 87px
+}
+
+.company #core_values ul li {
+    display: inline-block;
+    margin: 0 20px
+}
+
+.company #core_values ul a {
+    border: 2px solid #8a959e;
+    height: 104px!important;
+    width: 104px!important;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    -webkit-transition: border .1s;
+    transition: border .1s
+}
+
+.company #core_values ul a i {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -23px;
+    left: 47px;
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-image: url(../images/core-carrot.png);
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s
+}
+
+.company #core_values ul a.design,
+.company #core_values ul a.details,
+.company #core_values ul a.integrity,
+.company #core_values ul a.iterate,
+.company #core_values ul a.question,
+.company #core_values ul a.think {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/company-graphics.png);
+    background-repeat: no-repeat
+}
+
+.company #core_values ul a.active {
+    border-color: #f36
+}
+
+.company #core_values ul a.active i {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.company #core_values ul a.question {
+    background-position: 0 -3300px
+}
+
+.company #core_values ul a.question.active,
+.company #core_values ul a.question:active {
+    background-position: 0 -3600px
+}
+
+.company #core_values ul a.think {
+    background-position: 0 -5700px
+}
+
+.company #core_values ul a.think.active,
+.company #core_values ul a.think:active {
+    background-position: 0 -6000px
+}
+
+.company #core_values ul a.iterate {
+    background-position: 0 -4800px
+}
+
+.company #core_values ul a.iterate.active,
+.company #core_values ul a.iterate:active {
+    background-position: 0 -5100px
+}
+
+.company #core_values ul a.details {
+    background-position: 0 -2400px
+}
+
+.company #core_values ul a.details.active,
+.company #core_values ul a.details:active {
+    background-position: 0 -2700px
+}
+
+.company #core_values ul a.design {
+    background-position: 0 -900px
+}
+
+.company #core_values ul a.design.active,
+.company #core_values ul a.design:active {
+    background-position: 0 -1200px
+}
+
+.company #core_values ul a.integrity {
+    background-position: 0 0
+}
+
+.company #core_values ul a.integrity.active,
+.company #core_values ul a.integrity:active {
+    background-position: 0 -300px
+}
+
+.company #core_values .tab-wrapper {
+    position: relative
+}
+
+.company #core_values .tab {
+    position: absolute;
+    width: 655px;
+    top: 0;
+    left: 50%;
+    margin-left: -322px;
+    text-align: center;
+    display: none;
+    min-height: 100px
+}
+
+.company #core_values .tab.active {
+    display: block
+}
+
+.company #core_values h3 {
+    color: #f36;
+    font-size: 24px
+}
+
+.company #core_values p {
+    font-size: 25px;
+    line-height: 38px;
+    color: #d4d7da
+}
+
+.company #team {
+    padding-bottom: 150px
+}
+
+.company #team h2 {
+    margin: 40px 0 130px
+}
+
+.company .employee-grid {
+    max-width: 1040px;
+    margin: 0 auto
+}
+
+.company .employee-grid li {
+    float: left;
+    display: block;
+    margin-right: 3.125%;
+    width: 22.65625%;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    padding: 50px 0 49px
+}
+
+
+.company .employee-grid li:last-child,
+.company .employee-grid li:nth-child(4n) {
+    margin-right: 0
+}
+
+.company .employee-grid li:nth-child(4n+1) {
+    clear: left
+}
+
+.company .employee-grid li div {
+    text-indent: -9999em;
+    margin-bottom: 33px
+}
+
+.company .employee-grid li div.aaron_stump {
+    background-position: 0 -145px
+}
+
+.company .employee-grid li div.ahad_raza {
+    background-position: 0 -290px
+}
+
+.company .employee-grid li div.andy_orsow {
+    background-position: 0 -725px
+}
+
+.company .employee-grid li div.avi_posluns {
+    background-position: 0 -870px
+}
+
+.company .employee-grid li div.ben_nadel {
+    background-position: 0 -1160px
+}
+
+.company .employee-grid li div.billy_kiely {
+    background-position: 0 -1450px
+}
+
+.company .employee-grid li div.bryan_stanley {
+    background-position: 0 -2030px
+}
+
+.company .employee-grid li div.clark_valberg {
+    background-position: 0 -2465px
+}
+
+.company .employee-grid li div.david_bainbridge {
+    background-position: 0 -2900px
+}
+
+.company .employee-grid li div.jeff_bajayo {
+    background-position: 0 -3480px
+}
+
+.company .employee-grid li div.jeff_mcdowell {
+    background-position: 0 -3625px
+}
+
+.company .employee-grid li div.joel_hill {
+    background-position: 0 -3770px
+}
+
+.company .employee-grid li div.jon_dowdle {
+    background-position: 0 -4060px
+}
+
+.company .employee-grid li div.josh_siok {
+    background-position: 0 -4495px
+}
+
+.company .employee-grid li div.matt_vickers {
+    background-position: 0 -5365px
+}
+
+.company .employee-grid li div.oscar_arevalo {
+    background-position: 0 -5510px
+}
+
+.company .employee-grid li div.ryan_duffy {
+    background-position: 0 -6380px
+}
+
+.company .employee-grid li div.scott_markovits {
+    background-position: 0 -6525px
+}
+
+.company .employee-grid li div.shalom_weberman {
+    background-position: 0 -6960px
+}
+
+.company .employee-grid li div.shawn_grigson {
+    background-position: 0 -7105px
+}
+
+.company .employee-grid li div.vipul_patel {
+    background-position: 0 -7540px
+}
+
+.company .employee-grid li div.jon_rowny {
+    background-position: 0 -4205px
+}
+
+.company .employee-grid li div.matt_alvers {
+    background-position: 0 -5220px
+}
+
+.company .employee-grid li div.andrew_cullen {
+    display: inline-block;
+    vertical-align: middle;
+    height: 125px;
+    width: 125px;
+    background-image: url(../images/company-graphics.png);
+    background-position: 0 -580px;
+    background-repeat: no-repeat
+}
+
+.company .employee-grid li div.jonathan_hau {
+    background-position: 0 -4350px
+}
+
+.company .employee-grid li div.cutter_blades {
+    background-position: 0 -2610px
+}
+
+.company .employee-grid li div.margaret_kelsey {
+    background-position: 0 -5075px
+}
+
+.company .employee-grid li div.ben_jordan {
+    background-position: 0 -1015px
+}
+
+.company .employee-grid li div.katie_glenn {
+    background-position: 0 -4640px
+}
+
+.company .employee-grid li div.jake_stergar {
+    background-position: 0 -3190px
+}
+
+.company .employee-grid li div.beth_vanderkolk {
+    background-position: 0 -1305px
+}
+
+.company .employee-grid li div.rod_smith {
+    background-position: 0 -5945px
+}
+
+.company .employee-grid li div.roman_alexeev {
+    background-position: 0 -6090px
+}
+
+.company .employee-grid li div.kris_niles {
+    background-position: 0 -4785px
+}
+
+.company .employee-grid li div.david_malpass {
+    background-position: 0 -3045px
+}
+
+.company .employee-grid li div.robbie_manalo {
+    background-position: 0 -5800px
+}
+
+.company .employee-grid li div.daryl_banttari {
+    background-position: 0 -2755px
+}
+
+.company .employee-grid li div.ryan_burke {
+    background-position: 0 -6235px
+}
+
+.company .employee-grid li div.brandon_wolf {
+    background-position: 0 -1595px
+}
+
+.company .employee-grid li div.chris_bowler {
+    background-position: 0 -2175px
+}
+
+.company .employee-grid li div.james_dixson {
+    background-position: 0 -3335px
+}
+
+.company .employee-grid li div.stephen_olmstead {
+    background-position: 0 -7250px
+}
+
+.company .employee-grid li div.lindsey_kotkin {
+    background-position: 0 -4930px
+}
+
+.company .employee-grid li div.john_moore_williams {
+    background-position: 0 -3915px
+}
+
+.company .employee-grid li div.clair_byrd {
+    background-position: 0 -2320px
+}
+
+.company .employee-grid li div.brian_tino {
+    background-position: 0 -1885px
+}
+
+.company .employee-grid li div.teddie_straughn {
+    background-position: 0 -7395px
+}
+
+.company .employee-grid li div.sean_young {
+    background-position: 0 -6670px
+}
+
+.company .employee-grid h3 {
+    font-size: 14px;
+    color: #8a959e;
+    margin-bottom: 7px
+}
+
+.company .employee-grid p {
+    font-size: 12px;
+    color: #c0c3c7;
+    text-transform: uppercase;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    margin-bottom: 13px
+}
+
+.company .employee-grid p a {
+    font-size: 14px;
+    text-transform: none;
+    color: #f36;
+    font-weight: 400;
+    font-family: Open Sans, open-sans, sans-serif
+}
+
+.company #jobs {
+    padding-top: 120px
+}
+
+.company #jobs h2 {
+    margin-bottom: 100px
+}
+
+.company #jobs h3 {
+    font-size: 15px
+}
+
+.company #jobs .icon {
+    border: 2px solid #f36;
+    height: 104px!important;
+    width: 104px!important;
+    border-radius: 100px;
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 38px
+}
+
+.company #jobs .icon.anywhere,
+.company #jobs .icon.health,
+.company #jobs .icon.learn,
+.company #jobs .icon.salary {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/company-graphics.png);
+    background-repeat: no-repeat;
+    vertical-align: middle
+}
+
+.company #jobs .icon.anywhere {
+    background-position: 0 -4500px
+}
+
+.company #jobs .icon.health {
+    background-position: 0 -1800px
+}
+
+.company #jobs .icon.salary {
+    background-position: 0 -4200px
+}
+
+.company #jobs .icon.learn {
+    background-position: 0 -2100px
+}
+
+.company #jobs .grid-job-features {
+    max-width: 1040px;
+    margin: 0 auto
+}
+
+.company #jobs .split {
+    margin-bottom: 86px
+}
+
+.company #jobs .split:nth-child(even) {
+    margin-right: 0
+}
+
+.company #jobs .split p {
+    font-size: 15px;
+    line-height: 2;
+    padding: 0 35px
+}
+
+.company #jobs .open-positions h2 {
+    margin: 0 0 40px;
+    clear: both
+}
+
+.company #jobs .open-positions ul {
+    text-align: left;
+    max-width: 1040px;
+    margin: 0 auto
+}
+
+.company #jobs .open-positions li {
+    float: left;
+    display: block;
+    margin-right: 3.125%;
+    width: 31.25%;
+    margin-top: 1px;
+    margin-bottom: 40px;
+    border: 1px solid #d0d5d8
+}
+
+.company #jobs .open-positions li:last-child,
+.company #jobs .open-positions li:nth-child(3n) {
+    margin-right: 0
+}
+
+.company #jobs .open-positions li:nth-child(3n+1) {
+    clear: left
+}
+
+.company #jobs .open-positions li h3 {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    display: block;
+    background: #fff
+}
+
+.company #jobs .open-positions li:hover {
+    border-top: solid 2px #f36;
+    margin-top: 0
+}
+
+.company #jobs .open-positions li:hover span {
+    color: #323a45;
+    border-color: #323a45
+}
+
+.company #jobs .open-positions a {
+    display: block;
+    position: relative;
+    height: 250px;
+    padding: 45px 45px 51px;
+    border-radius: 3px;
+    text-transform: none;
+    background: #fff;
+    font: 300 24px/1.4em "Open Sans", open-sans, sans-serif;
+    color: #323a45
+}
+
+.company #jobs .open-positions a span {
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    color: #8a959e;
+    font-size: 18px;
+    line-height: 1.2em;
+    border-bottom: solid 1px #d0d5d8
+}
+
+.company #jobs .open-positions .whr-info,
+.company #jobsNotOnWorkable {
+    display: none
+}
+
+.company #media_kit {
+    height: 585px
+}
+
+.company #media_kit h1 {
+    margin: 60px 0 35px
+}
+
+.company #media_kit p {
+    color: #d4d7da;
+    font-size: 25px;
+    line-height: 38px;
+    margin: 0 auto 56px;
+    max-width: 840px
+}
+
+.company #media_kit p.button {
+    margin-bottom: 43px
+}
+
+.company #media_kit p.small {
+    color: #8a959e;
+    font-size: 15px;
+    margin-bottom: 13px
+}
+
+.company #media_kit ul li {
+    margin: 0 20px;
+    display: inline-block
+}
+
+.company #media_kit ul a {
+    color: #2f7bbd;
+    font: 700 13px/1em brandon-grotesque, sans-serif;
+    text-transform: uppercase
+}
+
+.company #media_kit ul a:hover {
+    color: #8ab9e2
+}
+
+.company #contact {
+    margin-top: -100px;
+    padding-top: 100px;
+    background: url(../img/team/contact_bg.png?1438111359) center 200px no-repeat
+}
+
+.company #contact h2 {
+    margin-bottom: 29px
+}
+
+.company #contact h3 {
+    font-size: 15px
+}
+
+.company #contact p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px
+}
+
+.company #contact .wrap {
+    width: 500px;
+    margin: 0 auto
+}
+
+.company #contact form {
+    width: 100%;
+    position: relative
+}
+
+.company #contact form p {
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #8a959e
+}
+
+.company #contact form input,
+.company #contact form select,
+.company #contact form textarea {
+    width: 100%;
+    border: 1px solid #d0d5d8
+}
+
+.company #contact form input.error,
+.company #contact form select.error,
+.company #contact form textarea.error {
+    border-color: #f36
+}
+
+.company #contact form textarea {
+    height: 224px;
+    padding: 19px 14px
+}
+
+.company #contact form input[type=submit] {
+    border: 0;
+    font-size: 20px
+}
+
+.company #contact-thankyou-wrapper {
+    display: none;
+    margin-bottom: 80px
+}
+
+.company #contact-thankyou-wrapper h2 {
+    margin: 100px 0 20px
+}
+
+.company #contact-thankyou-wrapper p {
+    margin-bottom: 70px
+}
+
+.company #contact-thankyou-wrapper a {
+    display: block;
+    width: 345px;
+    margin: 0 auto 30px;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    font: 700 16px/1.5em "Open Sans", open-sans, sans-serif;
+    padding: 33px 0;
+    text-align: center;
+    vertical-align: middle
+}
+
+.company #contact-thankyou-wrapper a i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 16px;
+    margin-right: 5px
+}
+
+.company #contact-thankyou-wrapper a.twitter {
+    color: #4cafe6
+}
+
+.company #contact-thankyou-wrapper a.twitter:hover {
+    border-color: #4cafe6
+}
+
+.company #contact-thankyou-wrapper a.dribbble {
+    color: #fd5280
+}
+
+.company #contact-thankyou-wrapper a.dribbble:hover {
+    border-color: #fd5280
+}
+
+.company #contact-thankyou-wrapper button {
+    background: 0 0;
+    border: none;
+    outline: 0;
+    color: #2f7bbd;
+    font: 700 16px/1.5em "Open Sans", open-sans, sans-serif;
+    margin: 70px 0 40px;
+    cursor: pointer
+}
+
+
+.company #contact-thankyou-wrapper button:hover {
+    color: #f36
+}
+
+

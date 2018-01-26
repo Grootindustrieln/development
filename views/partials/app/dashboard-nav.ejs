@@ -1,0 +1,62 @@
+			
+				
+				<nav class="navbar">
+  					<div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand no-delay gray-link alignc" href="/app/dashboard">
+					      	<img src="../../images/logo_color_small.png" width="100" alt="Critico logo">
+					      </a>
+					    </div>
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emails <span class="fa fa-angle-down"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="/app/new-email-template">Create New Template</a></li>
+					            <li><a href="/app/saved-email-templates">Saved Email Templates</a></li>
+					          </ul>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Landing Pages <span class="fa fa-angle-down"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Create New Template</a></li>
+					            <li><a href="#">Saved Landing Pages</a></li>
+					          </ul>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forms <span class="fa fa-angle-down"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Create New Form</a></li>
+					            <li><a href="#">Saved Forms</a></li>
+					          </ul>
+					        </li>
+					        <li><a href="#">Knowledge Base</a></li>
+					      </ul>
+					      <ul class="nav navbar-nav navbar-right">
+					        <li class="dropdown account_toggle">
+					        	<a href="#" class="dropdown-toggle account-button no-delay gray-link " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<div role="presentation" class="logged-in-avatar inline-block avatar !margin--lv0" style="background-image: url(../../images/app/user-icon.png)"></div>
+									<div aria-label="" class="account-name inline-block hide-mobile valign-middle alignl margin--lv2 !margin-top-bottom--lv0 !margin-right--lv0">
+										<span aria-label=""><%= user.emailaddress %></span><br>
+										<span aria-label="Account name"><%= company.name %></span>
+									</div>
+									<span class="inline-block fa fa-angle-down margin--lv1 !margin-top-bottom--lv0 !margin-right--lv0"></span>
+								</a>
+					          	<ul class="dropdown-menu">
+						            <li><a href="/app/profile">Profile</a></li>
+						            <li><a href="/app/account">Account</a></li>
+						            <li><a href="/">Return to Site</a></li>
+						            <li><a href="/logout">Logout</a></li>
+					          	</ul>
+					        </li>
+					        <li><a href="#">Help</a></li>
+					      </ul>
+					    </div>
+  					</div>
+				</nav>

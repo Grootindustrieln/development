@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Account | Critico</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="#52BAD5" name="msapplication-TileColor">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/theone.css">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/pages.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" href="../../css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/app/app-main.css" media="screen" />
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Fonts -->
+<script src="https://use.fontawesome.com/03f81593ac.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto" rel="stylesheet">
+<script src="/release/11.7.1016/js/dojo/mccommon.js"></script>
+
+<script type="text/javascript" src="/release/11.7.1016/js/swfobject.js"></script>
+
+</head>
+
+<body class="mcd relative full-height-vh flex flex-col overflow-hidden">
+    <div class="novip">
+        <div class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0">
+            <div class="line selfclear">
+                <% include ../../partials/app/dashboard-nav %>
+            </div>
+        </div>
+        
+    <div id="wrap" class="wrap flex overflow-auto-y overflow-hidden-x">
+        <div id="main-content" class="main-content mc-content flex flex-col selfclear">
+            <div class="lastUnit size1of1 overflow-visible flex-shrink-none">
+                <div id="av-flash-block" class="c-flashBlock"> </div>
+            </div>
+            <div role="main" id="content" class="content selfclear relative">
+                <div class="lastUnit size1of1 header account">
+                    <h1><%= company.name %></h1>
+                    <h4><%= user.emailaddress %></h4>
+                </div>
+                <div class="line local-nav-container">
+                    <div class="lastUnit size1of1">
+                        <div>
+                            <p class="c-menuBarToggle !margin--lv0 full-width padding--lv2 border-top border-bottom font-weight--bold cursor-pointer"> Navigation <span class="freddicon menu-down float-right" role="presentation" aria-hidden="true"></span> </p>
+                            <% include ../../partials/app/profile-nav %>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <div class="line">
+                        <div class="lastUnit size1of1">
+                            <h3 class="inline-block padding--lv2 !padding-left--lv0 !padding-top-bottom--lv0">
+                                <span><%= plan.name %> plan</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <div class="line !margin-bottom--lv4">
+                                <div class="unit size1of2">
+                                    <div class="meter-data full-width selfclear !margin--lv0 alignr">
+                                        <p class="font-weight--bold float-left !margin--lv0">Email Templates</p>
+                                        <p class="!margin--lv0 full-width"><span class="font-weight--bold">0</span> of <span class="font-weight--bold">2,000</span></p>
+                                    </div>
+                                    <div class="meter !margin-bottom--lv2"> <span style="width:0%"></span> </div>
+                                    <p class="small-meta font-weight--bold dim-el"><a href="#">Upgrade your account</a> to have more email templates available to create.</p>
+                                </div>
+                                <div class="lastUnit size1of2">
+                                    <div class="count alignr">
+                                        <p class="font-weight--bold float-left !margin--lv0">Landing Page Templates</p>
+                                        <p class="!margin--lv0 full-width"><span class="font-weight--bold">0</span> of <span class="font-weight--bold">12,000</span></p>
+                                        <div class="meter !margin-bottom--lv2"> <span style="width:0%"></span> </div>
+                                        <p class="small-meta float-left font-weight--bold dim-el"><a href="#">Upgrade your account</a> to have more email templates available to create.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="lastUnit size1of1">
+                                    <a href="/account/billing-plan" class="button p0" role="button">Upgrade Your account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

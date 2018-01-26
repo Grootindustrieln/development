@@ -1,0 +1,437 @@
+        <div id="left-nav" class="sidebar expand row hidden-xs">
+            <ul class="nav nav-sidebar nav-sidebar-header hidden-xs">
+                <li>
+                <a class="navbar-brand" tabindex="1" href="/app/dashboard">
+                    <img src="../../images/logo_icon.png" alt="Critico"><%= company.name %><br>
+                </a>
+                </li>
+            </ul>
+            <ul id="nav-inboxes" class="nav nav-sidebar">
+                <li id="dashboard-link">
+                    <a href="/app/dashboard" tabindex="2">
+                        <i class="left-nav-icons icon-dashboard" title="Dashboard"></i>
+                        <span title="Dashboard">Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-separator">
+                <span>Create Assets</span>&nbsp;
+            </div>
+            <ul class="nav nav-sidebar create-new">
+                <li id="email-templates-link">
+                    <a href="/app/new-email-template" tabindex="3">
+                        <i class="left-nav-icons icon-envelope-o" title="Email Templates" aria="true"></i>
+                        <span title="Email Templates">Email Templates</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="4">
+                        <i class="left-nav-icons icon-landing-page" title="Landing Pages"></i>
+                        <span title="Landing Pages">Landing Pages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="5">
+                        <i class="left-nav-icons icon-form" title="Forms"></i>
+                        <span title="Forms">Forms - <em>Coming Soon!</em></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-separator">
+                <span>Saved Assets</span>&nbsp;
+            </div>
+            <ul class="nav nav-sidebar create-new">
+                <li id="saved-email-templates-link">
+                    <a href="/app/saved-email-templates" tabindex="6">
+                        <i class="left-nav-icons icon-envelope-open-o" title="Email Template Drafts"></i>
+                        <span title="Email Templates">Email Templates</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="7">
+                        <i class="left-nav-icons icon-landing-page-code" title="Landing Pages"></i>
+                        <span title="Landing Pages">Landing Pages</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-separator">
+                <span>Quick Links</span>&nbsp;
+            </div>
+            <ul class="nav nav-sidebar">
+                <li>
+                    <a href="/app/profile" tabindex="8">
+                        <i class="left-nav-icons icon-profile" title="Profile"></i>
+                        <span title="Profile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="9">
+                        <i class="left-nav-icons icon-account" title="Account"></i>
+                        <span title="Account">Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="10">
+                        <i class="left-nav-icons icon-billing" title="Billing"></i>
+                        <span title="Billing">Billing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="11">
+                        <i class="left-nav-icons icon-integrations" title="Integrations"></i>
+                        <span title="Integrations">Integrations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" tabindex="12">
+                        <i class="left-nav-icons icon-preferences" title="Preferences"></i>
+                        <span title="Preferences">Preferences</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="subscription-info text-center">
+            </div>
+            <div class="nav-bar-bottom">
+                <ul id="nav-toggle" class="nav nav-sidebar">
+                    <li>
+                        <a href="#left-nav"  data-toggle="expand" tabindex="-1" title="Toggle Navbar">
+                            <i class="icon-circle-arrow-left-o"></i>
+                            <span>Toggle Navigation</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="topbar navbar" id="top-bar">
+            <div class="navbar-header">
+                <button type="button" class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target="#critico-navbar">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="top-nav-icons icon-bars"></span>
+                </button>
+                <a class="navbar-brand visible-xs pull-right" href="">
+                    <img src="http://via.placeholder.com/41x41" alt="Critico"><%= company.name %>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="critico-navbar">
+                <ul id="nav-inboxes" class="nav navbar-nav visible-xs">
+                    <li>
+                        <a href="" tabindex="2">
+                            <i class="top-nav-icons icon-critico-inbox"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-separator visible-xs">
+                    <span>Create Assets</span>&nbsp;
+                </div>
+                <ul class="nav navbar-nav create-new visible-xs">
+                    <li>
+                        <a href="" tabindex="4">
+                            <i class="top-nav-icons icon-critico-email"></i>
+                            <span>Email Testing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="5">
+                            <i class="top-nav-icons icon-critico-editor"></i>
+                            <span>Email Editor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="5">
+                            <i class="top-nav-icons icon-critico-cancel"></i>
+                            <span>Spam Testing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="6">
+                            <i class="top-nav-icons icon-critico-analytics"></i>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="7">
+                            <i class="top-nav-icons icon-critico-preview"></i>
+                            <span>Web Page Preview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="8">
+                            <i class="top-nav-icons icon-critico-mozify"></i>
+                            <span>Mozify</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="9">
+                            <i class="top-nav-icons icon-critico-optimizer"></i>
+                            <span>Optimizer</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-separator visible-xs">
+                    <span>Extras</span>&nbsp;
+                </div>
+                <ul class="nav navbar-nav visible-xs">
+                    <li>
+                        <a href="" tabindex="3">
+                            <i class="top-nav-icons icon-critico-inspiration"></i>
+                            <span>Design Inspiration</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="10">
+                            <i class="top-nav-icons icon-critico-resources"></i>
+                            <span>Resources</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" tabindex="11">
+                            <i class="top-nav-icons icon-critico-forum"></i>
+                            <span>Forum</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="subscription-info text-center visible-xs">
+                </div>
+                <div class="nav-separator visible-xs">
+                    <span>Account</span>&nbsp;
+                </div>
+                    <ul class="nav navbar-nav nav-list">
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="top-nav-icons icon-question-o"></i>
+                                <span>Help <i class="icon-angle-down drop-icon"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="" tabindex="13" target="_blank">
+                                        <span>Help Center</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#support" data-toggle="modal" tabindex="13">
+                                        <span>Support</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#feedback-modal" data-toggle="modal" tabindex="13">
+                                        <span>Give Feedback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="" tabindex="13" target="_blank">
+                                <i class="top-nav-icons icon-critico-status"></i>
+                                <span>System Status</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="" tabindex="13" target="_blank">
+                                <i class="top-nav-icons icon-critico-info-paper"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="#support" data-toggle="modal" tabindex="13">
+                                <i class="top-nav-icons icon-critico-support"></i>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li class="dropdown hidden-xs account-drop">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span id="hdr-member-name"><%= user.emailaddress %>
+                                <i class="icon-angle-down drop-icon"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="">
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="">
+                                        <span>Account</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="">
+                                        <span>Billing</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="">
+                                        <span>Integrations</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="/">
+                                        <span>Homepage</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="/logout">
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="">
+                                <i class="top-nav-icons icon-critico-settings"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="">
+                                <i class="top-nav-icons icon-critico-settings"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="">
+                                <i class="top-nav-icons icon-critico-user"></i>
+                                <span>Billing</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="">
+                                <i class="top-nav-icons icon-critico-user"></i>
+                                <span>Integrations</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="/logout">
+                                <i class="top-nav-icons icon-critico-logout"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="supportLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="supportHeader">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="supportLabel">Need Help?</h4>
+                    </div>
+                    <div class="modal-body" id="supportBody"></div>
+                    <div class="modal-footer" id="supportFooter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="feedback-modalHeader">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">1</span>
+                        </button>
+                        <h4 class="modal-title" id="feedback-modalLabel">We want to hear from you!</h4>
+                    </div>
+                    <form id="feedback-form" action="" method="post">
+                        <div class="modal-body" id="feedback-modalBody">
+                            <div class="container-fluid">
+                                <p class="text-center">
+                                    At Critico, we value your feedback and want you to receive the highest standard of service.
+                                    Your feedback represents an opportunity for us to improve our services.
+                                </p>
+                                <br>
+                                <div class="row form-group">
+                                    <div class="col-xs-12">
+                                        <textarea placeholder="Your Comments" class="form-control" id="feedback_details" name="feedback_details" rows="4" data-bv-notempty></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $('#feedback-form').bootstrapValidator({
+                                    live: 'submitted',
+                                    fields: {
+                                        feedback_details: {
+                                            validators: {
+                                                notEmpty: {
+                                                    message: "Please enter your feedback"
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            </script>
+                        </div>
+                        <div class="modal-footer" id="feedback-modalFooter">
+                            <button type="submit" class="btn btn-acidtest" id="feedback-submit" name="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="feedback-confirm-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-confirm-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="feedback-confirm-modalHeader">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">1</span>
+                        </button>
+                        <h4 class="modal-title" id="feedback-confirm-modalLabel">Thank you!</h4>
+                    </div>
+                    <form id="feedback-form" action="" method="post">
+                        <div class="modal-body" id="feedback-confirm-modalBody">
+                            <p class="text-center">Your feedback is very much appreciated.</p>
+                        </div>
+                        <div class="modal-footer" id="feedback-confirm-modalFooter"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="expand"]').click(function(e){
+                    e.preventDefault()
+                    $($(this).attr('href')).toggleClass('expand');
+                    $.ajax({
+                        url: '/app/cp/leftnav',
+                        data: {'left_nav': $($(this).attr('href')).hasClass('expand')?1:0},
+                        dataType: 'json',
+                        method: "POST"
+                    });
+                });
+                $('#support').on('show.bs.modal', function(e){
+                    if(!$('#support .modal-body').html().length){
+                        $('#support .modal-body').load('');
+                    }
+                });
+                $('#support').on('hidden.bs.modal', function(e){
+                    $('#support .modal-body').html('');
+                });
+                $('#feedback-form')
+                   .bootstrapValidator()
+                   .on('success.form.bv', function(event) {
+                        var stackcenter = {dir1: "down", dir2: "right", dir3:"top"},
+                            data = $(this).serialize();
+                            data = data + "&feedback_type=General";
+                            event.preventDefault();
+                            // Send the email
+                            $.ajax({
+                                method: "POST",
+                                url: "",
+                                data: data
+                            })
+                            .done(function(){
+                                $('#feedback-modal').modal('hide');
+                                $('#feedback-confirm-modal').modal('show');
+                                setTimeout(function() {
+                                    $('#feedback-confirm-modal').modal('hide');
+                                }, 5000);
+                                $('#feedback-form').find('textarea').val('');
+                                $('#feedback-form').find('input[type="checkbox"]').attr('checked', false);
+                                $('#feedback-form').data('bootstrapValidator').resetForm();
+                        });
+                    });
+                });
+        </script>

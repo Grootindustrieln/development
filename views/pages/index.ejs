@@ -1,0 +1,75 @@
+<% include ../partials/header %>
+
+<body class="home default alt">
+	<div id="ent-banner-wrapper"> 
+		<div id="nav-anchor"></div>
+		<div id="main-nav-wrapper" class="container_body">
+			<div class="inside">
+				<%- include ../partials/navigation %>
+			</div>
+		</div>
+		<header class="hero disable-select">
+			<div id="particles-js"></div>
+			<div class="hero-container">
+				<h1 class="hero-title disable-select">Captivate Your Audience</h1>
+				<h2 class="hero-subtitle disable-select">Create Editable, Modular Templates in <span style="color: #ED9840; font-weight: 600;">Minutes</span></h2>
+				<% if (user) { %>
+				<p class="button hero-button"><a class="trial-trigger standard-trigger disable-select" href="/app/dashboard">Your Dashboard</a></p>
+				<% } else { %>
+				<p class="button hero-button"><a class="trial-trigger standard-trigger disable-select" href="/register">Get Started</a></p>
+				<% } %>
+			</div>
+			<a href="#tour" class="hero-scroll"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			<div class="hero-overlay"></div>
+		</header>
+		<section class="container_body alt trusted-by">
+			<div class="inside">
+				<ul>
+					<li class="marketo"><span>Marketo</span></li>
+					<li class="hubspot"><span>Hubspot</span></li>
+					<li class="pardot"><span>Pardot</span></li>
+					<li class="eloqua"><span>Eloqua</span></li>
+					<li class="mailchimp"><span>MailChimp</span></li>
+					<li class="constantcontact"><span>ConstantContact</span></li>
+				</ul>
+			</div>
+		</section>
+		<div id="tour" class="container_body tour-item tour-1" data-i="0">
+			<div class="left disable-select col-sm-12">
+				<div class="tour-content">
+					<h2>Customizable<br/>Email Templates</h2>
+					<p class="desc">Critico's unique template builder allows you to easily build beautiful and engaging email templates with no HTML knowledge required. 
+									With a wide array of modules to choose from, creating one-of-a-kind assets has never been easier.</p>
+					<p class="tour-quote">Critico does the heavy lifting, allowing you to save money and time, and focus on captivating your audience.</p>
+					<% if (user) { %>
+					<p class="button hero-button"><a href="/app/dashboard"><strong>Your Dashbaord</strong><span class="fa fa-chevron-circle-right" id="inline-cta-icon"></span></a></p>
+					<% } else { %>
+					<p class="button hero-button"><a href="/register"><strong>Try Critico Now</strong><span class="fa fa-chevron-circle-right" id="inline-cta-icon"></span></a></p>
+					<% } %>
+				</div>
+			</div>
+			<div class="right disable-select">
+				<div class="ani-wrapper"></div>
+			</div>
+		</div>
+		<div class="container_body tour-item tour-2" data-i="1">
+			<div class="left disable-select">
+				<div class="ani-wrapper"></div>
+			</div>
+			<div class="right disable-select">
+				<div class="tour-content">
+					<h2>Responsive<br />Landing Page Templates</h2>
+					<p class="desc">The Critico template builder also allows you to effortlessly develop landing page templates to support your specific marketing initiatives.
+					All modules produce templates that are fully responsive, customizable, and designed to convert.</p>
+					<p class="tour-quote">Your assets should support your campaigns, not the other way around. Critico lets you build what you want, when you want, and go to market faster.</p>
+					<% if (user) { %>
+					<p class="button hero-button"><a href="/app/dashboard"><strong>Your Dashbaord</strong><span class="fa fa-chevron-circle-right" id="inline-cta-icon"></span></a></p>
+					<% } else { %>
+					<p class="button hero-button"><a href="/register"><strong>Try Critico Now</strong><span class="fa fa-chevron-circle-right" id="inline-cta-icon"></span></a></p>
+					<% } %>
+				</div>
+			</div>
+		</div>
+		
+<% include ../partials/footer %>
+	

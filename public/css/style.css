@@ -1,0 +1,182 @@
+/**/
+/*Homepage Header Styles*/
+/**/
+
+a:hover{
+    text-decoration: none;
+}
+
+#header_icon {
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+#fixed-ad .fixed-ad-content .fixed-ad-button {
+    background: #ED9840;
+}
+
+#fixed-ad .fixed-ad-content .fixed-ad-button:hover {
+    background: #E08E3D;
+}
+
+#fixed-ad .fixed-ad-content p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-nav-wrapper.container_body nav ul a {
+    color: #FBF5F3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main-nav-wrapper.container_body nav ul a:hover {
+    color: #ED9840;
+    text-decoration: none;
+}
+
+p.button a:hover, p.button button:hover, p.button input:hover {
+    background: #E08E3D;
+}
+
+#main-nav-wrapper.container_body nav ul li.signup a {
+    border: 1px solid #FBF5F3;
+    color: #FBF5F3;
+}
+
+#main-nav-wrapper.container_body nav ul li.signup a:hover {
+    background: #ED9840;
+    border: 1px solid #ED9840;
+}
+
+body.fixed-nav #main-nav-wrapper.container_body nav ul li.signup a:hover {
+    background: #E08E3D;
+}
+
+
+body.fixed-nav #main-nav-wrapper.container_body nav ul a:hover {
+    color: #ED9840;
+}
+
+.home .hero-title, .home2 .hero-title, .home3 .hero-title {
+font-family: 'Open Sans', sans-serif;
+    font-size: 90px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+
+.home .hero-subtitle, .home2 .hero-subtitle, .home3 .hero-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#fixed-ad {
+    background: #242529;
+}
+
+#fixed-ad.inspect_on a {
+    color: #ED9840;
+    border-bottom: 1px solid #ED9840;
+    font-weight: bold;
+}
+
+#fixed-ad.inspect_on a:hover {
+    color: #ED9840;
+    border-bottom: 1px solid #ED9840;
+}
+
+.tour-content a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.tour-content a:hover {
+    color: #ffffff;
+}
+
+#inline-cta-icon {
+    margin-left: 7px;
+}
+
+/**/
+/*End Homepage Header Styles*/
+/**/
+
+
+
+
+
+/**/
+/*Footer Styles*/
+/**/
+
+.border_glow_large {
+    border: 3px solid #E08E3D !important;
+}
+
+.border_glow_small {
+    border: 1px solid #E08E3D !important;
+}
+
+.logo_footer {
+    width: 450px;
+}
+
+.footer_blurb {
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: .875em;
+    font-style: italic;
+    margin: 0 0 1.875em;
+}
+
+.footer-links li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.footer-links .title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    color: #454754;
+    font-weight: 500
+}
+
+.footer-links a {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: #ED9840;
+}
+
+.social_icons a span {
+    color: #404E5C;
+    font-size: 26px;
+    padding-right: 5px;
+}
+
+.social_icons a span:hover {
+    color: #ED9840;
+}
+
+.about_company_main {
+    padding: 100px 0px;
+}
+
+/**/
+/*Footer Styles*/
+/**/
+
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}

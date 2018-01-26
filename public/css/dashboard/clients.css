@@ -1,0 +1,508 @@
+/*  This file is for the email clients table */
+
+.icon-mac:before {
+    display: inline-block;
+    content: ' ';
+    height: 24px;
+    width: 24px;
+    background: url('../images/system-apple.png');
+}
+
+.icon-win:before {
+    display: inline-block;
+    content: ' ';
+    height: 24px;
+    width: 100%;
+    background: url('../images/system-windows.png') center top no-repeat;
+}
+
+.client-grid {
+    padding-top: 20px;
+}
+
+.checkbox-client {
+    display: inline-block;
+    width: 188px;
+    height: 36px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    vertical-align: top;
+    cursor: pointer;
+    color: #666;
+}
+
+.checkbox-client .cc-name {
+    position: relative;
+    top: -9px;
+}
+
+.checkbox-client .cc-name:after {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-client .cc-name .cc-os {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -18px;
+    left: 0;
+    padding-left: 18px;
+    white-space: nowrap;
+}
+
+.checkbox-client-mac .cc-name:after {
+    display: inline-block;
+    content: ' ';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -18px;
+    left: 0;
+    background: url('../images/system-apple.png') no-repeat;
+    background-size: 16px;
+}
+
+.checkbox-client-win .cc-name:after {
+    display: inline-block;
+    content: ' ';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -18px;
+    left: 0;
+    padding-left: 18px;
+    background: url('../images/system-windows.png') no-repeat;
+    background-size: 16px;
+}
+
+.browsertesting-checkbox-client-mac .cc-name:after {
+    display: inline-block;
+    content: 'MAC';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -5px;
+    left: 0;
+    padding-left: 18px;
+    background: url('../images/system-apple.png') no-repeat;
+    background-size: 16px;
+}
+
+.browsertesting-checkbox-client-win .cc-name:after {
+    display: inline-block;
+    content: 'WINDOWS';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -5px;
+    left: 0;
+    padding-left: 18px;
+    background: url('../images/system-windows.png') no-repeat;
+    background-size: 16px;
+}
+
+.checkbox-client-android .cc-name:after {
+    display: inline-block;
+    content: ' ';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -18px;
+    left: 0;
+    padding-left: 18px;
+    background: url('../images/system-android.png') no-repeat;
+    background-size: 16px;
+}
+
+.checkbox-client-ios .cc-name:after {
+    display: inline-block;
+    content: ' ';
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    width: 175px;
+    color: #999;
+    bottom: -18px;
+    left: 0;
+    padding-left: 18px;
+    background: url('../images/system-apple.png') no-repeat;
+    background-size: 16px;
+}
+
+.table-web-clients > thead > tr:last-child {
+    background-color: #f0f0f0;
+}
+
+.table-web-clients > thead > tr > th {
+    text-align: center;
+}
+
+.table-web-clients > tbody > tr > td {
+    text-align: center;
+}
+
+.table-web-clients > thead > tr > th:first-child{
+    text-align: left;
+}
+
+.table-web-clients > tbody > tr > td:first-child{
+    text-align: left;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.header-browser-cell {
+    padding-bottom: 3px;
+}
+
+.browser-cell-clients {
+    padding-left: 33px;
+}
+
+.browser-cell {
+    text-align: left;
+    font-weight: 700;
+    padding: 5px 0px 0px 33px;
+}
+
+.browser-cell-chr {
+    height: 33px;
+    background: url('../images/browser-chrome.png') left top no-repeat;
+    background-size: 28px;
+}
+
+.browser-cell-ff {
+    height: 33px;
+    background: url('../images/browser-firefox.png') left top no-repeat;
+    background-size: 28px;
+}
+
+.browser-cell-ie {
+    height: 33px;
+    background: url('../images/browser-ie.png') left top no-repeat;
+    background-size: 28px;
+}
+
+.browser-cell-si {
+    height: 33px;
+    background: url('../images/browser-safari.png') left top no-repeat;
+    background-size: 28px;
+}
+
+.browser-cell-oa {
+    height: 33px;
+    background: url('../images/email-client-opera.png') left top no-repeat;
+    background-size: 28px;
+}
+
+
+/*the following section is for the web and regional client redesign*/
+
+.client-logo a {
+    text-decoration: none;
+}
+
+.checkbox-client-rd {
+    display: inline-block;
+    width: 188px;
+    height: 36px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    vertical-align: top;
+    cursor: pointer;
+    color: #666;
+}
+
+.checkbox-client-rd span {
+    position: relative;
+    top: -3px;
+}
+
+.checkbox-client-mac-rd span:after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -10px;
+    left: 12px;
+    padding-left: 18px;
+    background: url('../images/system-apple.png') no-repeat;
+    background-size: 13px;
+    width: 18px;
+    height: 20px;
+}
+
+.checkbox-client-win-rd span:after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    bottom: -10px;
+    left: 13px;
+    padding-left: 18px;
+    background: url("../images/system-windows.png") no-repeat;
+    background-size: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+
+.browser-cell-name {
+    padding-left: 29px;
+    top: -3px;
+}
+
+.browser-cell-clients-rd {
+    padding-left: 33px;
+}
+
+.browser-cell-rd {
+    text-align: left;
+    font-weight: 700;
+    padding: 5px 20px 0px 0px;
+}
+
+
+.browser-cell-chr-rd span:before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    bottom: -1px;
+    left: 0;
+    padding-left: 22px;
+    background-image: url('../images/browser-chrome.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 20px;
+    height: 19px;
+}
+
+
+/*.browser-cell-chr-rd {
+    height: 20px;
+    background: url('../images/browser-chrome.png') left top no-repeat;
+    background-size: 20px;
+
+}*/
+
+.browser-cell-ff-rd span:before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    bottom: -1px;
+    left: 0;
+    padding-left: 22px;
+    background-image: url('../images/browser-firefox.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 20px;
+    height: 19px;
+}
+
+.browser-cell-ie-rd span:before {
+
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    bottom: -1px;
+    left: 0;
+    padding-left: 22px;
+    background-image: url('../images/browser-ie.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 20px;
+    height: 19px;
+
+}
+
+.browser-cell-si-rd span:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    bottom: -1px;
+    left: 0;
+    padding-left: 22px;
+    background-image: url('../images/browser-safari.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 20px;
+    height: 19px;
+}
+
+.browser-cell-oa-rd span:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    bottom: -1px;
+    left: 0;
+    padding-left: 22px;
+    background-image: url('../images/email-client-opera.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 20px;
+    height: 19px;
+}
+
+.client-cell-aol {
+    height: 33px;
+    background: url('../images/logo-aol.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-bol {
+    height: 33px;
+    background: url('../images/logo-bol.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-cc {
+    height: 33px;
+    background: url('../images/logo-comcast.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-frt {
+    height: 33px;
+    background: url('../images/logo-freenet-de.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-gmail_new {
+    height: 33px;
+    background: url('../images/logo-gmail.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-gmx {
+    height: 33px;
+    background: url('../images/logo-gmx.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-gapps {
+    height: 33px;
+    background: url('../images/logo-google-apps.png') left top no-repeat;
+    background-size: 25px;
+}
+.client-cell-lb {
+    height: 33px;
+    background: url('../images/logo-libero.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-mru {
+    height: 33px;
+    background: url('../images/logo-mail-ru.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-o365 {
+    height: 33px;
+    background: url('../images/logo-office-365.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-ofr {
+    height: 33px;
+    background: url('../images/logo-orange-fr.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-outlook_com {
+    height: 33px;
+    background: url('../images/logo-outlook-com.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-sfr {
+    height: 33px;
+    background: url('../images/logo-sfr-fr.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-toe {
+    height: 33px;
+    background: url('../images/logo-t-online-de.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-tra {
+    height: 33px;
+    background: url('../images/logo-terra.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-wde {
+    height: 33px;
+    background: url('../images/logo-web-de.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-yahoo_beta {
+    height: 33px;
+    background: url('../images/logo-yahoo.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-yahoo_new {
+    height: 33px;
+    background: url('../images/logo-yahoo.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-lpe {
+    height: 33px;
+    background: url('../images/logo-laposte.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-ffr {
+    height: 33px;
+    background: url('../images/logo-free-fr.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-qq {
+    height: 33px;
+    background: url('../images/logo-qqmail.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-rmr {
+    height: 33px;
+    background: url('../images/logo-rambler-ru.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-ydx {
+    height: 33px;
+    background: url('../images/logo-yandex-ru.png') left top no-repeat;
+    background-size: 28px;
+}
+
+.client-cell-nte {
+    height: 33px;
+    background: url('../images/logo-nate.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-nvr {
+    height: 33px;
+    background: url('../images/logo-naver.png') left top no-repeat;
+    background-size: 28px;
+}
+.client-cell-tsa {
+    height: 33px;
+    background: url('../images/logo-telstra.png') left top no-repeat;
+    background-size: 28px;
+}
+
+
+/*end web and regional client redesign*/

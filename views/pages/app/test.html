@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width" />
+<meta name="msvalidate.01" content="C31D3542BF61D435F8F05FDCE3F423EA" />
+<title>Core Value Reinforcement</title>
+<link rel="shortcut icon" href="https://anyperk.com/wp-content/uploads/2017/02/favicon.png">
+<link rel="pingback" href="https://fond.co/xmlrpc.php" />
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v6.1.2 - https://yoa.st/1yg?utm_content=6.1.2 -->
+<link rel="canonical" href="https://fond.co/programs-solutions/core-value-reinforcement/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Core Value Reinforcement" />
+<meta property="og:url" content="https://fond.co/programs-solutions/core-value-reinforcement/" />
+<meta property="og:site_name" content="Fond" />
+<meta property="article:publisher" content="https://www.facebook.com/FondInc/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Core Value Reinforcement" />
+<meta name="twitter:site" content="@fond" />
+<meta name="twitter:creator" content="@fond" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/fond.co\/","name":"Fond","potentialAction":{"@type":"SearchAction","target":"https:\/\/fond.co\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/fond.co\/programs-solutions\/core-value-reinforcement\/","sameAs":["https:\/\/www.facebook.com\/FondInc\/","https:\/\/www.instagram.com\/fond_co\/","https:\/\/www.linkedin.com\/company-beta\/17986432\/","https:\/\/www.pinterest.com\/fond_inc\/","https:\/\/twitter.com\/fond"],"@id":"#organization","name":"Fond","logo":""}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fond.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='https://fond.co/wp-content/plugins/instagram-feed/css/sb-instagram.min.css?ver=1.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fond_stylesheet-css'  href='https://fond.co/wp-content/themes/fond/style.css?ver=4.8' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://fond.co/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fond.co/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fond.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8" />
+<link rel='shortlink' href='https://fond.co/?p=462' />
+<link rel="alternate" type="application/json+oembed" href="https://fond.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffond.co%2Fprograms-solutions%2Fcore-value-reinforcement%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://fond.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffond.co%2Fprograms-solutions%2Fcore-value-reinforcement%2F&#038;format=xml" />
+<link rel="icon" href="https://fond.co/wp-content/uploads/2017/04/cropped-favicon-32x32-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://fond.co/wp-content/uploads/2017/04/cropped-favicon-32x32-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://fond.co/wp-content/uploads/2017/04/cropped-favicon-32x32-180x180.png" />
+<meta name="msapplication-TileImage" content="https://fond.co/wp-content/uploads/2017/04/cropped-favicon-32x32-270x270.png" />
+<script type="text/javascript">
+    document.templateDirectoryURI = "https://fond.co/wp-content/themes/fond";
+</script>
+<script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+  analytics.load("got62SAH76yT1D1juA2aZRJgYwmshmJC");
+  analytics.page();
+  }}();
+</script>
+</head>
+<body>
+    <div id="product-menu">
+        <div class="top"></div>
+        <div class="content">
+            <div class="products">
+            <a href="https://fond.co/employee-rewards/"><img src="https://fond.co/wp-content/uploads/2017/03/rewards_icon.png" alt="Rewards"/><div class="product"><h2>Rewards</h2><p>Employee recognition and rewards</p></div></a><a href="https://fond.co/employee-perks/"><img src="https://fond.co/wp-content/uploads/2017/03/perks_icon.png" alt="Perks"/><div class="product"><h2>Perks</h2><p>Corporate discounts and VIP treatment</p></div></a><a href="https://fond.co/products/engagementiq/"><img src="https://fond.co/wp-content/uploads/2017/03/eiq_icon.png" alt="Engagement"/><div class="product"><h2>EngagementIQ</h2><p>Free employee sentiment gauge</p></div></a>            </div>
+            <div class="images">
+            <a href="https://fond.co/products/fond-platform/"><img src="https://fond.co/wp-content/uploads/2017/05/built-on-the-Fond-platform-1-e1494626271478.png" alt="All Products Are Built on the Fond Platform"/></a><a href="https://fond.co/products/success-support/"><img src="https://fond.co/wp-content/uploads/2017/05/Programs-Solutions-1-e1494626218709.png" alt="Customer Success & Support"/></a>            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="bot"></div>
+    </div>
+    <div id="main-menu">
+        <div class="top"></div>
+        <div class="content">
+            <a href="https://fond.co/peer-to-peer-recognition/" data-menu-index="1">Peer-to-Peer Recognition</a><a href="https://fond.co/spot-bonuses/" data-menu-index="1">Spot Bonuses</a><a href="https://fond.co/programs-solutions/service-awards-birthdays/" data-menu-index="1">Service Awards & Birthdays</a><a href="https://fond.co/corporate-discounts/" data-menu-index="1">Corporate Discounts</a><a href="https://fond.co/employee-engagement-surveys/" data-menu-index="1">Engagement Surveys</a><a href="https://fond.co/resources/featured-resources/" data-menu-index="2">Resources</a><a href="https://fond.co/blog/" data-menu-index="2">Blog</a><a href="https://fond.co/company/about/" data-menu-index="3">About Fond</a><a href="https://fond.co/company/news-room/" data-menu-index="3">News Room</a><a href="https://fond.co/company/support/" data-menu-index="3">Support</a><a href="https://fond.co/partners/" data-menu-index="3">Partner with Fond</a>        </div>
+        <div class="bot"></div>
+    </div>
+    <div id="mobile-menu">
+            <a class="menu--demo button--sm button--primary" href="https://fond.co/demo/">Request Demo</a>
+            <div class="products">
+            <a href="https://fond.co/employee-rewards/"><img src="https://fond.co/wp-content/uploads/2017/03/rewards_icon.png" alt="Rewards"/><div class="product"><h2>Rewards</h2><p>Employee recognition and rewards</p></div></a><a href="https://fond.co/employee-perks/"><img src="https://fond.co/wp-content/uploads/2017/03/perks_icon.png" alt="Perks"/><div class="product"><h2>Perks</h2><p>Corporate discounts and VIP treatment</p></div></a><a href="https://fond.co/products/engagementiq/"><img src="https://fond.co/wp-content/uploads/2017/03/eiq_icon.png" alt="Engagement"/><div class="product"><h2>EngagementIQ</h2><p>Free employee sentiment gauge</p></div></a>            </div>
+            <div class="content">
+                <div class="mobile--main"><h2>Programs</h2><ul><li><a href="https://fond.co/peer-to-peer-recognition/">Peer-to-Peer Recognition</a></li><li><a href="https://fond.co/spot-bonuses/">Spot Bonuses</a></li><li><a href="https://fond.co/programs-solutions/service-awards-birthdays/">Service Awards & Birthdays</a></li><li><a href="https://fond.co/corporate-discounts/">Corporate Discounts</a></li><li><a href="https://fond.co/employee-engagement-surveys/">Engagement Surveys</a></li></ul></div><div class="mobile--main"><h2>Learn</h2><ul><li><a href="https://fond.co/resources/featured-resources/">Resources</a></li><li><a href="https://fond.co/blog/">Blog</a></li></ul></div><div class="mobile--main"><h2>Company</h2><ul><li><a href="https://fond.co/company/about/">About Fond</a></li><li><a href="https://fond.co/company/news-room/">News Room</a></li><li><a href="https://fond.co/company/support/">Support</a></li><li><a href="https://fond.co/partners/">Partner with Fond</a></li></ul></div>            </div>
+    </div>
+
+    <nav>
+                <div class="menu">
+            <a href="/" id="fond_logo"><img src="https://fond.co/wp-content/themes/fond/images/fond.png" alt="Fond"></a>
+            <a class="menu--item" href="#" data-menu-index="0">Products</a>
+            <a class="menu--item" href="#" data-menu-index="1">Programs</a><a class="menu--item" href="#" data-menu-index="2">Learn</a><a class="menu--item" href="#" data-menu-index="3">Company</a>
+            <a class="menu--demo button--sm button--primary" href="https://fond.co/demo/">Request Demo</a>
+            <a class="menu--login button--sm button--primary-ghost" href="https://fond.co/sign_in">Login</a>
+            <a class="menu--burger"><img src="https://fond.co/wp-content/themes/fond/images/menu.png" alt="menu"></a>
+        </div>
+    </nav>
+    <main id="main" class="site-main   " role="main">
+        <section class="module" style="background-color: #4e80ff;">
+    <div class="hero">
+        <div class="hero--content" style="height:14rem;">
+            <h1 class="title" style="color:#ffffff;margin-top:4rem;">Core Values Reinforcement</h1>
+            <hr style="color:#ffffff"/>
+                        <div class="content" style="color:#ffffff"></div>
+                    </div>
+    </div>
+</section>
+<section class="module flush_top flush_bottom  half_media_stretch--module" style="background-color: #FFFFFF;height: 30rem;">
+    <div class="half_media_stretch--background equal" style="background-color: #4e80ff;background-image:url(https://fond.co/wp-content/uploads/2017/03/shutterstock_428013688-e1490658751738.jpg);background-position:right center;"></div>
+    <div class="half_media_stretch">
+        <h1 class="" style="color:#314380;">Celebrate Employees<br>Who Live Your Values</h1><hr style="color:#314380;" />        <div class="half_media_stretch--content image_left equal"><div class="half_media_stretch--text"><img class="badge" src="https://fond.co/wp-content/uploads/2017/03/Rewards-Red.png" alt=""><h1 class="" style="color:#314380;">Celebrate Employees<br>Who Live Your Values</h1><hr style="color:#314380;" /><div style="color:#000000;"><p><span style="font-weight: 400;">Powered by Fond Rewards<sup>TM</sup>, our Core Values Program offers senior leadership and managers a simple and direct way of recognizing employees when they uphold company values. Any time an employee acts in alignment with corporate values, managers can send reward credits along with a personal congratulatory message that can be shared company-wide. Employees can choose from hundreds of high-quality rewards spanning diverse categories, offering something for everyone.</span></p>
+<ul class="arrow"><li><a href="#Demo">Request Demo</a></li></ul></div></div></div>    </div>
+</section>
+<section class="module" style="background-color: #00a26b;">
+    <div class="module_header"><h1 class="center" style="color:#ffffff;">Features</h1><hr class="center"style="color:#ffffff;" /></div>    <div class="features">
+        <div class="features--deck">
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/custom-rewards/" style="color:#ffffff;">                        <h2>Hundreds<br>of Rewards</h2>
+                        <p>Hundreds of high-quality rewards for employees to chose from.</p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/custom-occasions/" style="color:#ffffff;">                        <h2>Customized to<br>Your Values</h2>
+                        <p>Create icons that represent your unique core values to ensure the program is unique to your companty. </p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/custom-rewards/" style="color:#ffffff;">                        <h2>Personalized<br>Notes</h2>
+                        <p>Maximize your recognition impact with personalized notes.</p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/" style="color:#ffffff;">                        <h2>Team<BR>Recognition</h2>
+                        <p>Boost program engagement by recognizing entire groups that live your values. </p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/mobile-recognition/" style="color:#ffffff;">                        <h2>Mobile<Br>Recognition</h2>
+                        <p>Recognize core values alignment in the moment, redeem rewards on-the-go. </p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/products/success-support/" style="color:#ffffff;">                        <h2>Program<br>Manager</h2>
+                        <p>A Fond Customer Success Manager helps you plan, launch and iterate on your core values program.</p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/analytics/" style="color:#ffffff;">                        <h2>Recognition<br>Analytics</h2>
+                        <p>Track who's exhibiting your core values and which employees are the most frequent recognizers. </p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/company-branding/" style="color:#ffffff;">                        <h2>Branded<br>Platform</h2>
+                        <p>Add your logo to your program platform to ensure you boost your employer brand.</p>
+                    </a>                </div>
+                            <div class="feature" style="color:#febe10">
+                    <a href="https://fond.co/employee-rewards/features/peer-to-peer-recognition/" style="color:#ffffff;">                        <h2>Peer-to-Peer<br>Recognition</h2>
+                        <p>Add extra fuel to your program by letting employees recognize their peers for living your values. </p>
+                    </a>                </div>
+                    </div>
+    </div>
+</section><a id="Demo" class="jump"></a>
+<section class="module flush_bottom" style="background-color: #FFFFFF;">
+    <div class="marketo_form" >
+         <div class="marketo_form--content"><h1 class="left" style="color:#000000;">Talk to a Representative About Fond's Core Values Program</h1><hr class="left" style="color:#000000;" /><div style="color:#000000;"></div><div style="color:#000000;"><p><script src="http://app-ab04.marketo.com/js/forms2/js/forms2.min.js"></script></p>
+<form id="mktoForm_2033"></form>
+<p><script>MktoForms2.loadForm("http://app-ab04.marketo.com", "568-NTW-286", 2033);</script></p>
+</div></div>    </div>
+</section>    </main>
+    <footer>
+        <div class="footer--container">
+        <div class="footer--group"><h3>Products</h3><hr/><ul><li><a href="https://fond.co/products/fond-platform/">Fond Platform</a></li><li><a href="https://fond.co/employee-rewards/">Rewards</a></li><li><a href="https://fond.co/products/engagementiq/">EngagementIQ</a></li><li><a href="https://fond.co/employee-perks/">Perks</a></li></ul></div><div class="footer--group"><h3>Programs</h3><hr/><ul><li><a href="https://fond.co/peer-to-peer-recognition/">Peer-to-Peer Recognition</a></li><li><a href="https://fond.co/spot-bonuses/">Spot Bonuses</a></li><li><a href="https://fond.co/corporate-discounts/">Corporate Discounts</a></li><li><a href="https://fond.co/programs-solutions/service-awards-birthdays/">Service Awards & Birthdays</a></li><li><a href="https://fond.co/programs-solutions/core-value-reinforcement/">Core Values Reinforcement</a></li></ul></div><div class="footer--group"><h3>Resources</h3><hr/><ul><li><a href="https://fond.co/resources/featured-resources/">Featured Resources</a></li><li><a href="https://fond.co/blog/">Blog</a></li></ul></div><div class="footer--group"><h3>Careers</h3><hr/><ul><li><a href="https://fond.co/careers/job-openings/">Job Openings</a></li><li><a href="https://fond.co/careers/working-at-fond/">Working at Fond</a></li></ul></div><div class="footer--group"><h3>Packages & Pricing</h3><hr/><ul><li><a href="https://fond.co/pricing/fond-platform-pricing/">Fond Suite</a></li><li><a href="https://fond.co/pricing/rewards-pricing/">Rewards</a></li><li><a href="https://fond.co/pricing/perks-pricing/">Perks</a></li></ul></div><div class="footer--group"><h3>Company</h3><hr/><ul><li><a href="https://fond.co/company/about/">About Fond</a></li><li><a href="https://fond.co/company/news-room/">News Room</a></li><li><a href="https://fond.co/partners/">Partner with Fond</a></li><li><a href="https://fond.co/company/support/">Support</a></li></ul></div>            
+            <p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://fond.co/" rel="v:url" property="v:title">Home</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://fond.co/programs-solutions/" rel="v:url" property="v:title">Programs &#038; Solutions</a> » <span class="breadcrumb_last">Core Value Reinforcement</span></span></span></span></p>
+            
+            <p class="footer--copyright">
+            &copy; Copyright 2017, AnyPerk, Inc. d/b/a Fond. All rights reserved.
+            <span class="footer--menu">
+            <a href="/tos">Terms</a> | <a href="/privacy">Privacy Policy</a> | <a href="/sitemap_index.xml">Sitemap</a>
+            </span>
+            </p>
+        </div>
+
+    </footer>
+
+    <script type='text/javascript' src='https://fond.co/wp-content/themes/fond/js/prod/scripts.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://fond.co/wp-includes/js/wp-embed.min.js?ver=4.8'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f835ddceab","applicationID":"24197070","transactionName":"MVRRMBRWWEVUAkMKWAgeZhYPGF9YUQRPTUcOQQ==","queueTime":0,"applicationTime":908,"atts":"HRNSRlxMS0s=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

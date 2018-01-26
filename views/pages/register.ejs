@@ -1,0 +1,524 @@
+<% include ../partials/header %>
+<link rel="stylesheet" type="text/css" media="all" href="css/login.css" />
+
+<body>
+	<div class="main-panel">
+		<div class="main-panel__table">
+			<div class="main-panel__table-cell">
+			    <a href="/">
+			    <div class="main-panel__logo">
+				</div></a>
+				<div class="main-panel__switch">
+					<span class="main-panel__switch__text">
+						Already have an account?
+					</span>
+					<a href="/login" class="main-panel__switch__button">
+						Login
+					</a>
+				</div>
+					<div class="main-panel__content_step">
+						<small class="main-panel__subheading_small" id="step_count">
+							Step 1 of 2.
+						</small>
+					</div>
+					<div class="main-panel__content">
+						<h1 class="main-panel__heading step-1">
+							Create your Critico account.
+							<small class="main-panel__subheading" id="reg_subheading">
+								Input your account information below.
+							</small>
+						</h1>
+						<div class="pricing-quote step-2">
+						<p class="pricing-quote-top"><span id="selected_plan">Silver</span> Subscription <span class="pricing-quote-blurb">( <span id="price_dynamic">$720/annually</span> + <a href="">any applicable taxes</a> )</span></p>
+						<p class="pricing-quote-bottom">This amount is based on the subscription plan you selected, and your card will be charged this amount. Once your account is created you can upgrade, downgrade, or cancel any time.
+						</p>
+						</div>
+						<form class="main-panel__form" action="/register.php" id="reg-form" method="post" novalidate>
+							<div class="form__group group_left">
+								<label for="email" class="form__label">Email Address</label>
+								<input id="email" type="text" class="form__input" name="email" placeholder="youremail@xyzdomain.com" />
+							</div>
+							<div class="form__group group_right">
+								<label for="password" class="form__label">Password</label>
+								<input id="password" type="password" class="form__input" name="password" placeholder="Create a password" />
+							</div>
+							<div class="form__group">
+								<label for="company" class="form__label">Company Name</label>
+								<input id="company" type="text" class="form__input" name="company" placeholder="Your Company Name" />
+							</div>
+							<div class="form__group">
+								<label for="provider" class="form__label">Email Provider</label>
+								<select id="provider" type="select" class="form__input" name="provider" placeholder="What do you use to send emails?" />
+									<option value="default">What platform do you use to send emails?</option>
+	  								<option value="marketo">Marketo</option>
+	  								<option value="hubspot">Hubspot</option>
+	  								<option value="pardot">Pardot</option>
+	  								<option value="eloqua">Eloqua</option>
+	  								<option value="mailchimp">MailChimp</option>
+	  								<option value="constant contact">Constant Contact</option>
+	  								<option value="other">Other</option>
+								</select>
+								<small class="main-panel__providerdisc">
+								We'll use this to tailor your Critico experience - you can change it later.
+								</small>
+							</div>
+							<div class="text--center">
+								<button class="form__button" id="reg-np">Start Creating!</button>
+							</div>
+							<small class="main-panel__providerdisc-2">
+								By clicking this, you agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy"  target="_blank">Privacy Policy</a>.
+							</small>
+						</form>
+						
+						<form class="main-panel__form" action="/registerp.php" id="reg-payment-form" method="post" novalidate>
+							<div class = "step-1">
+							<div class="form__group group_left">
+								<label for="email" class="form__label">Email Address</label>
+								<input id="emailp" type="text" class="form__input" name="email" placeholder="youremail@xyzdomain.com" />
+							</div>
+							<div class="form__group group_right">
+								<label for="password" class="form__label">Password</label>
+								<input id="passwordp" type="password" class="form__input" name="password" placeholder="Create a password" />
+							</div>
+							<div class="form__group">
+								<label for="company" class="form__label">Company Name</label>
+								<input id="companyp" type="text" class="form__input" name="company" placeholder="Your Company Name" />
+							</div>
+							<div class="form__group">
+								<label for="provider" class="form__label">Email Provider</label>
+								<select id="providerp" type="select" class="form__input" name="provider" placeholder="What do you use to send emails?" />
+	  								<option value="default">What platform do you use to send emails?</option>
+	  								<option value="marketo">Marketo</option>
+	  								<option value="hubspot">Hubspot</option>
+	  								<option value="pardot">Pardot</option>
+	  								<option value="eloqua">Eloqua</option>
+	  								<option value="mailchimp">MailChimp</option>
+	  								<option value="constant contact">Constant Contact</option>
+	  								<option value="other">Other</option>
+								</select>
+								<small class="main-panel__providerdisc">
+								We'll use this to tailor your Critico experience - you can change it later.
+								</small>
+							</div>
+							<div class="text--center">
+								<button class="form__button" id="reg_continue">Continue</button>
+							</div>
+							</div>
+							<div class="step-2">
+							<div class="form__group group_left">
+								<label for="cardholder" class="form__label">Cardholder's Name</label>
+								<input id="cardholder" type="text" class="form__input" name="cardholder" placeholder="Cardholder's Name" />
+							</div>
+							<div class="form__group group_right">
+								<label for="cardnumber" class="form__label">Card Number</label>
+								<input id="cardnumber" type="text" class="form__input" name="cardnumber" placeholder="xxxxxxxxxxxxxxxx" />
+							</div>
+							<div class="form__group cc_details_row">
+								<label for="expirymonth" class="form__label">Expiration Date (MM/YYYY)</label>
+								<select id="expirymonth" type="text" class="form__input" name="expirymonth" placeholder="Card Expiration Date" />
+									<option value="select" selected>- Select Month -</option>
+  									<option value="jan">January</option>
+  									<option value="feb">February</option>
+  									<option value="mar">March</option>
+  									<option value="april">April</option>
+  									<option value="may">May</option>
+  									<option value="june">June</option>
+  									<option value="july">July</option>
+  									<option value="august">August</option>
+  									<option value="september">September</option>
+  									<option value="october">October</option>
+  									<option value="november">November</option>
+  									<option value="december">December</option>
+								</select>
+							</div>
+							<div class="form__group cc_details_row">
+								<label for="expiryyear" class="form__label" id="expiration_2">Expiration Date</label>
+								<select id="expiryyear" type="text" class="form__input" name="expiryyear" placeholder="Card Expiration Date" />
+									<option value="select" selected>- Select Year -</option>
+  									<option value="2017">2017</option>
+  									<option value="2018">2018</option>
+  									<option value="2019">2019</option>
+  									<option value="2020">2020</option>
+  									<option value="2021">2021</option>
+  									<option value="2022">2022</option>
+  									<option value="2023">2023</option>
+  									<option value="2024">2024</option>
+  									<option value="2025">2025</option>
+  									<option value="2026">2026</option>
+								</select>
+							</div>
+							<div class="form__group cvv_register">
+								<label for="cardcvv" class="form__label">CVV</label>
+								<input id="cardcvv" type="text" class="form__input" name="cardcvv" placeholder="Card CVV" />
+							</div>
+							<div class="form__group cc_details_row">
+								<label for="country" class="form__label">Country</label>
+								<select id="country" type="text" class="form__input" name="country" placeholder="Card Expiration Date" />
+									<option value="select" selected>- Country -</option>
+  									<option value="United States">United States</option>
+  									<option value="Canada">Canada</option>
+  									<option value="United Kingdom">United Kingdom</option>
+								</select>
+							</div>
+							<div class="form__group cc_details_row">
+								<label for="state" class="form__label">State/Province</label>
+								<select id="state" type="text" class="form__input" name="state" placeholder="Card Expiration Date" />
+								<option value="select" selected>- State/Province -</option>
+  									<option value="2017">Ohio</option>
+  									<option value="2018">California</option>
+  									<option value="2019">Hawaii</option>
+  									<option value="2020">Texas</option>
+  									<option value="2021">Illinois</option></select>
+							</div>
+							<div class="form__group cvv_register">
+								<label for="postal" class="form__label">Postal Code</label>
+								<input id="postal" type="text" class="form__input" name="postal" placeholder="Postal Code" />
+							</div>
+							<div class="text--center">
+								<button class="form__button" id="reg-p">Start Creating!</button>
+							</div>
+							<small class="main-panel__providerdisc-2">
+								By clicking this, you agree to the <a href="/terms"  target="_blank">Terms of Service</a> and <a href="/privacy"  target="_blank">Privacy Policy</a>.
+								</small>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+
+$(document).ready(function(){
+		
+		//function to grab url parameter(s)
+		var getUrlParameter = function getUrlParameter(sParam) {
+	    	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
+	
+		    	for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+		
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+	    	}
+		};
+		// --end--
+
+	//identify pricing plans and update form labels accordingly
+	var p_id = getUrlParameter('edd_options[price_id]');
+		if (p_id == 's11r14') {
+			$('#selected_plan').text('Silver');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$80/monthly');
+			var plan = 'Silver - Monthly';
+		}
+		else if (p_id == 'g12d13') {
+			$('#selected_plan').text('Gold');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$100/monthly');
+			var plan = 'Gold - Monthly';
+		}
+		else if (p_id == 'p13m12') {
+			$('#selected_plan').text('Platinum');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$120/monthly');
+			var plan = 'Platinum - Monthly';
+		}
+		else if (p_id == 's14r17') {
+			$('#selected_plan').text('Silver');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$720/annually');
+			var plan = 'Silver - Annually';
+		}
+		else if (p_id == 'g15d16') {
+			$('#selected_plan').text('Gold');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$900/annually');
+			var plan = 'Gold - Annually';
+		}
+		else if (p_id == 'p16m15') {
+			$('#selected_plan').text('Platinum');
+			
+			$('.main-panel__content_step').show();
+			$('#reg-form').hide();
+			$('#reg-payment-form').show();
+			$('#price_dynamic').text('$1,080/annually');
+			var plan = 'Platinum - Annually';
+		}
+		else {
+			var plan = 'Bronze';
+		}
+    	
+    	
+    	$("#reg_continue").click(function (e) {
+			e.preventDefault();
+			var form = $("#reg-payment-form");
+		    var emailaddress = $("#emailp").val();
+	    	var password = $("#passwordp").val();
+	    	var company = $("#companyp").val();
+	    	var provider = $("#providerp").val();
+	    	var username = emailaddress;
+	    	
+	    	$.ajax({
+	        type: "POST",
+	        url: "/registerp.php",
+	        data:JSON.stringify({'emailaddress':emailaddress, 'password':password, 'company':company, 'provider':provider, 'username':emailaddress, 'plan':plan}),
+	        contentType: 'application/json',
+	        dataType: 'JSON',
+	        complete: function(response) {
+	        	var data_response = response.responseText;
+	        	if (data_response.indexOf("username already exists") >= 0) {
+	        		$('#emailp').addClass('border_glow_small');
+	        		$('#passwordp').removeClass('border_glow_small');
+	        		$('#companyp').removeClass('border_glow_small');
+	        		$('#providerp').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('This username already exists - Please log in or use a different email.');
+	        	}
+	        	else if (data_response.indexOf("missing email") >= 0) {
+	        		$('#emailp').addClass('border_glow_small');
+	        		$('#passwordp').removeClass('border_glow_small');
+	        		$('#companyp').removeClass('border_glow_small');
+	        		$('#providerp').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter a valid email address.');
+	        	}
+	        	else if (data_response.indexOf("need password") >= 0) {
+	        		$('#emailp').removeClass('border_glow_small');
+	        		$('#passwordp').addClass('border_glow_small');
+	        		$('#companyp').removeClass('border_glow_small');
+	        		$('#providerp').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter a valid password.');
+	        	}
+	        	else if (data_response.indexOf("need company") >= 0) {
+	        		$('#emailp').removeClass('border_glow_small');
+	        		$('#passwordp').removeClass('border_glow_small');
+	        		$('#companyp').addClass('border_glow_small');
+	        		$('#providerp').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter your company name.');
+	        	}
+	        	else if (data_response.indexOf("need provider") >= 0) {
+	        		$('#emailp').removeClass('border_glow_small');
+	        		$('#passwordp').removeClass('border_glow_small');
+	        		$('#companyp').removeClass('border_glow_small');
+	        		$('#providerp').addClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please select your current email provider.');
+	        	}
+	        	else { 
+	        		$('#step_count').text("Step 2 of 2.");
+					$('.step-1').hide();
+					$('.step-2').show();
+	        	}
+	        }      
+	    	});
+	    	
+	    	$("#reg-payment-form").submit(function (e) {
+				e.preventDefault();
+				var cardname = $("#cardholder").val();
+				var cardnumber = $("#cardnumber").val();
+				var expirymonth = $("#expirymonth").val();
+				var expiryyear = $("#expiryyear").val();
+				var cardcvv = $("#cardcvv").val();
+				var country = $("#country").val();
+				var state = $("#state").val();
+				var postal = $("#postal").val();
+			
+				$.ajax({
+	        	type: "POST",
+	        	url: "/processregp.php",
+	        	data:JSON.stringify({'emailaddress':emailaddress, 'password':password, 'company':company, 'provider':provider, 'username':emailaddress, 'plan':plan, 'cardname':cardname, 'cardnumber':cardnumber, 'expirymonth':expirymonth, 'expiryyear': expiryyear, 'cardcvv':cardcvv, 'country':country, 'state':state, 'postal':postal}),
+	        	contentType: 'application/json',
+	        	dataType: 'JSON',
+	        	complete: function(response) {
+	        		var data_response = response.responseText;
+					if (data_response.indexOf("cardholder") >= 0) {
+	        			$('#cardholder').addClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Need a valid cardholder name.');
+					}
+	        		else if (data_response.indexOf("need card number") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').addClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Need a credit card number.');
+	        		}
+	        		else if (data_response.indexOf("not a valid card number") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').addClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! This is not a valid card number.');
+	        		}
+	        		else if (data_response.indexOf("month") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').addClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing card expiration month.');
+	        		}
+	        		else if (data_response.indexOf("year") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').addClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing card expiration year.');
+	        		}
+	        		else if (data_response.indexOf("CVV") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').addClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing CVV code.');
+	        		}
+	        		else if (data_response.indexOf("country") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').addClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing country.');
+	        		}
+	        		else if (data_response.indexOf("state") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').addClass('border_glow_small');
+						$('#postal').removeClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing state.');
+	        		}
+	        		else if (data_response.indexOf("postal") >= 0) {
+	        			$('#cardholder').removeClass('border_glow_small');
+	        			$('#cardnumber').removeClass('border_glow_small');
+	        			$('#expirymonth').removeClass('border_glow_small');
+	        			$('#expiryyear').removeClass('border_glow_small');
+	        			$('#cardcvv').removeClass('border_glow_small');
+	        			$('#country').removeClass('border_glow_small');
+	        			$('#state').removeClass('border_glow_small');
+						$('#postal').addClass('border_glow_small');
+	        			$('#reg_subheading').text('Oops! Missing postal code.');
+	        		}
+	        		else {
+	        			window.location.href = data_response;
+	        		}
+	        	}
+	    		});
+			});
+		});
+		// --end--
+		
+		
+		
+		//ajax processing for registration form submission
+		$("#reg-form").submit(function (e) {
+			e.preventDefault();
+	    	var form = $("#reg-form");
+	    	var emailaddress = $("#email").val();
+	    	var password = $("#password").val();
+	    	var company = $("#company").val();
+	    	var provider = $("#provider").val();
+	    	var username = emailaddress;
+    	
+	    	$.ajax({
+	        type: "POST",
+	        url: "/register.php",
+	        data:JSON.stringify({'emailaddress':emailaddress, 'password':password, 'company':company, 'provider':provider, 'username':emailaddress, 'plan':plan}),
+	        contentType: 'application/json',
+	        dataType: 'JSON',
+	        complete: function(response) {
+	        	var data_response = response.responseText;
+	        	if (data_response.indexOf("username already exists") >= 0) {
+	        		$('#email').addClass('border_glow_small');
+	        		$('#password').removeClass('border_glow_small');
+	        		$('#company').removeClass('border_glow_small');
+	        		$('#provider').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('This username already exists - Please log in or use a different email.');
+	        	}
+	        	else if (data_response.indexOf("missing email") >= 0) {
+	        		$('#email').addClass('border_glow_small');
+	        		$('#password').removeClass('border_glow_small');
+	        		$('#company').removeClass('border_glow_small');
+	        		$('#provider').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter a valid email address.');
+	        	}
+	        	else if (data_response.indexOf("need password") >= 0) {
+	        		$('#email').removeClass('border_glow_small');
+	        		$('#password').addClass('border_glow_small');
+	        		$('#company').removeClass('border_glow_small');
+	        		$('#provider').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter a valid password.');
+	        	}
+	        	else if (data_response.indexOf("need company") >= 0) {
+	        		$('#email').removeClass('border_glow_small');
+	        		$('#password').removeClass('border_glow_small');
+	        		$('#company').addClass('border_glow_small');
+	        		$('#provider').removeClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please enter your company name.');
+	        	}
+	        	else if (data_response.indexOf("need provider") >= 0) {
+	        		$('#email').removeClass('border_glow_small');
+	        		$('#password').removeClass('border_glow_small');
+	        		$('#company').removeClass('border_glow_small');
+	        		$('#provider').addClass('border_glow_small');
+	        		$('#reg_subheading').text('Oops! Please select your current email provider.');
+	        	}
+	        	else { window.location.href = data_response;}
+	        }      
+	    	});
+	});
+	// --end--
+
+
+});
+</script>

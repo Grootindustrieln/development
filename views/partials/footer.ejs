@@ -1,0 +1,127 @@
+<div class="container_body dark-blue footer-signup signup-form-wrapper">
+	<div class="inside disable-select">
+		<h2 id="signup_header">Subscribe to receive product releases, company updates, and exclusive assets</h2>
+		<form method="POST" class="signupform" action="/php/signup.php" id="signupform">
+			<p>
+				<label for="signup_first">First Name</label>
+				<input type="text" name="firstname" id="signup_first" value="" autocomplete="off" spellcheck="false" />
+			</p>
+			<p>
+				<label for="signup_last">Last Name</label>
+				<input type="text" name="lastname" id="signup_last" value="" autocomplete="off" spellcheck="false" />
+			</p>
+			<p>
+				<label for="signup_email">Email Address</label>
+				<input type="text" name="email" id="signup_email" value=""  autocomplete="off" spellcheck="false" />
+			</p>
+			<p class="button"><button type="submit" id="signup_button">Subscribe</button></p>
+		</form>
+		<p class="terms">By clicking "Subscribe" I agree to Critico's <a href="/terms">Terms of Service.</a></p>
+		<div id="container"></div>
+	</div>
+</div>
+
+<div class="container_body footer-site">
+	<div class="inside">
+		<ul class="footer-links disable-select">
+			<li class="logo_footer">
+				<ul>
+					<li class="critico"><a href="/">Critico</a></li>
+					<li class="footer_blurb">Critico empowers marketers by providing them with the tools they need to create beautiful, engaging assets to support any initiative.</li>
+					<li class="copyr">&copy; Critico 2017 - All Rights Reserved</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li class="title">Critico</li>
+					<li><a href="/how-it-works" title="How it Works">How it Works</a></li>
+					<li><a href="/pricing" title="Pricing" >Pricing</a></li>
+					<li><a href="/pricing#faq" title="FAQs">FAQ</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li class="title">About Us</li>
+					<li><a href="/company" title="About Critico">Company</a></li>
+					<li><a href="mailto:hello@critico.io" title="Contact Us">Contact Us</a></li>
+					<li><a href="" class="no-redirect" target="_blank" title="Knowledge Base">Knowledge Base</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li class="title">Legal Info</li>
+					<li><a href="/terms" title="Terms & Conditions">Terms & Conditions</a></li>
+					<li><a href="/privacy" title="Privacy Policy" >Privacy Policy</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li class="title">Social</li>
+					<li class="social_icons">
+						<a href="" title="Critico Facebook"><span class="fa fa-facebook-official"></span></a>
+						<a href="" title="Critico Twitter"><span class="fa fa-twitter-square"></span></a>
+						<a href="" title="Critico Instagram"><span class="fa fa-instagram"></span></a>
+						<a href="" title="Critico LinkedIn"><span class="fa fa-linkedin-square"></span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<script src="/js/home.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/dist.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+	$(".signupform").submit(function (e) {
+		e.preventDefault();
+	    var form = $(".signupform");
+	        
+	    
+    	var firstname = $("#signup_first").val();
+    	var lastname = $("#signup_last").val();
+    	var email = $("#signup_email").val();
+
+    	
+    	$.ajax({
+        type: "POST",
+        url: "/php/signup.php",
+        data:JSON.stringify({'firstname':firstname, 'lastname':lastname, 'email':email}),
+        contentType: 'application/json',
+        dataType: 'JSON',
+        complete: function(response) {
+        	var data_response = response.responseText;
+			if (data_response.indexOf("firstname") >= 0 && data_response.indexOf("Invalid postparam") >= 0) {
+				$('#signup_first').addClass('border_glow_large');
+				$('#signup_last').removeClass('border_glow_large');
+				$('#signup_email').removeClass('border_glow_large');
+				$('#signup_header').text("Please enter a valid first name and try again.");
+			}
+			else if (data_response.indexOf("lastname") >= 0 && data_response.indexOf("Invalid postparam") >= 0) {
+				$('#signup_first').removeClass('border_glow_large');
+				$('#signup_last').addClass('border_glow_large');
+				$('#signup_email').removeClass('border_glow_large');
+				$('#signup_header').text("Please enter a valid last name and try again.");
+			}
+			else if (data_response.indexOf("email") >= 0 && data_response.indexOf("Invalid postparam") >= 0) {
+				$('#signup_first').removeClass('border_glow_large');
+				$('#signup_last').removeClass('border_glow_large');
+				$('#signup_email').addClass('border_glow_large');
+				$('#signup_header').text("Please enter a valid email address and try again.");
+			}
+			else {
+				$('#signup_header').text("Thank you - you've made a great decision!");
+			}
+        }      
+    	});
+	});
+});
+</script>
+
+</div>
+</body>
+</html>

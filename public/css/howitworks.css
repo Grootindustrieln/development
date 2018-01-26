@@ -1,0 +1,579 @@
+.landing-page .container_body .feature-set li:nth-child(3n+1),
+.landing-page .container_body .feature-set.plus-seperators li:nth-child(5n+1),
+.landing-page .container_body .feature-set.two li:nth-child(2n+1),
+.landing-page .container_body .more-features ul li:nth-child(2n+1) {
+    clear: left
+}
+
+.landing-page .container_body.quote {
+    height: 750px;
+    text-align: center;
+    background: #747c83
+}
+
+.landing-page .container_body .feature-set li.activity-feed i,
+.landing-page .container_body .feature-set li.all-projects i,
+.landing-page .container_body .feature-set li.animations-for-interactivity i,
+.landing-page .container_body .feature-set li.click-or-hover i,
+.landing-page .container_body .feature-set li.comment-feed i,
+.landing-page .container_body .feature-set li.create-templates i,
+.landing-page .container_body .feature-set li.daily-digest i,
+.landing-page .container_body .feature-set li.development i,
+.landing-page .container_body .feature-set li.fixed-areas i,
+.landing-page .container_body .feature-set li.gestures i,
+.landing-page .container_body .feature-set li.gestures-apple i,
+.landing-page .container_body .feature-set li.gestures-for-transitions i,
+.landing-page .container_body .feature-set li.in-browser i,
+.landing-page .container_body .feature-set li.ipad i,
+.landing-page .container_body .feature-set li.iphone i,
+.landing-page .container_body .feature-set li.link-anywhere i,
+.landing-page .container_body .feature-set li.on-android-phone i,
+.landing-page .container_body .feature-set li.on-android-tablet i,
+.landing-page .container_body .feature-set li.on-desktop i,
+.landing-page .container_body .feature-set li.realtime i,
+.landing-page .container_body .feature-set li.support i,
+.landing-page .container_body .feature-set li.tappable-hotspots i,
+.landing-page .container_body .feature-set li.transitions i,
+.landing-page .container_body .feature-set li.transitions-apple i,
+.landing-page .container_body.quote .eventbrite.logo,
+.landing-page .container_body.quote .evernote.logo,
+.landing-page .container_body.quote .paypal.logo,
+.landing-page .container_body.quote .xero.logo {
+    background-image: url(../images/lp_assets.png);
+    background-repeat: no-repeat
+}
+
+.landing-page .container_body.quote blockquote {
+    color: #fff;
+    padding-top: 91px
+}
+
+.landing-page .container_body.quote blockquote:before {
+    content: "â€œ";
+    position: absolute;
+    top: 94px;
+    font: 400 77px/1em brandon-grotesque, sans-serif;
+    left: 50%
+}
+
+.landing-page .container_body.quote blockquote p {
+    color: inherit;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 46px;
+    width: 820px;
+    margin: 0 auto
+}
+
+.landing-page .container_body.quote .person {
+    padding-top: 50px;
+    padding-bottom: 8px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px
+}
+
+.landing-page .container_body.quote .person span {
+    margin-bottom: 13px
+}
+
+.landing-page .container_body.quote .person.joshua-taylor span {
+    background-position: 0 -8544px
+}
+
+.landing-page .container_body.quote .person.tom-censani span {
+    background-position: 0 -14014px
+}
+
+.landing-page .container_body.quote .person.chooake span {
+    background-position: 0 -1125px
+}
+
+.landing-page .container_body.quote .person.phillip span {
+    background-position: 0 -11241px
+}
+
+.landing-page .container_body.quote .evernote.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 101px;
+    background-position: 0 -4995px
+}
+
+.landing-page .container_body.quote .eventbrite.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 21px;
+    width: 67px;
+    background-position: 0 -4774px
+}
+
+.landing-page .container_body.quote .paypal.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 75px;
+    background-position: 0 -11021px
+}
+
+.landing-page .container_body.quote .xero.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    background-position: 0 -15414px
+}
+
+.landing-page .container_body:not(.footer-signup) h2 {
+    margin-bottom: 15px;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.landing-page .container_body h2,
+.landing-page .container_body p {
+    text-align: center
+}
+
+.landing-page .container_body .desc {
+    display: block;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.landing-page .container_body .feature-set {
+    width: 916px;
+    margin: 82px auto 0
+}
+
+.landing-page .container_body .feature-set.two li {
+    float: left;
+    display: block;
+    margin-right: 6.45161%;
+    width: 46.77419%
+}
+
+.landing-page .container_body .feature-set.two li:last-child,
+.landing-page .container_body .feature-set.two li:nth-child(2n) {
+    margin-right: 0
+}
+
+.landing-page .container_body .feature-set.two li h3 {
+    font-size: 16px
+}
+
+.landing-page .container_body .feature-set li {
+    float: left;
+    display: block;
+    margin-right: 3.125%;
+    width: 31.25%;
+    padding: 0 10px;
+    text-align: center
+}
+
+.landing-page .container_body .feature-set li:last-child,
+.landing-page .container_body .feature-set li:nth-child(3n) {
+    margin-right: 0
+}
+
+.landing-page .container_body .feature-set li h3,
+.landing-page .container_body .feature-set li p {
+    font-size: 14px
+}
+
+.landing-page .container_body .feature-set li .illustration {
+    text-align: center;
+    height: 175px;
+    line-height: 175px;
+    margin-bottom: 48px
+}
+
+.landing-page .container_body .feature-set li .illustration i {
+    text-indent: -9999px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.tappable-hotspots i {
+    display: inline-block;
+    height: 175px;
+    width: 113px;
+    background-position: 0 -13639px;
+    vertical-align: bottom;
+    margin-left: 16px
+}
+
+.landing-page .container_body .feature-set li.link-anywhere i {
+    display: inline-block;
+    height: 175px;
+    width: 206px;
+    background-position: 0 -8819px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.create-templates i {
+    display: inline-block;
+    height: 175px;
+    width: 201px;
+    background-position: 0 -3275px;
+    vertical-align: bottom;
+    margin-left: 85px
+}
+
+.landing-page .container_body .feature-set li.gestures i {
+    display: inline-block;
+    height: 175px;
+    width: 191px;
+    background-position: 0 -6722px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.fixed-areas i {
+    display: inline-block;
+    height: 177px;
+    width: 168px;
+    background-position: 0 -5220px;
+    vertical-align: bottom;
+    margin-right: -68px
+}
+
+.landing-page .container_body .feature-set li.transitions i {
+    display: inline-block;
+    height: 175px;
+    width: 126px;
+    background-position: 0 -14664px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.on-android-phone i {
+    display: inline-block;
+    height: 138px;
+    width: 72px;
+    background-position: 0 -9949px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.on-android-tablet i {
+    display: inline-block;
+    height: 160px;
+    width: 115px;
+    background-position: 0 -10287px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.on-desktop i {
+    display: inline-block;
+    height: 174px;
+    width: 215px;
+    background-position: 0 -10647px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.click-or-hover i,
+.landing-page .container_body .feature-set li.gestures-for-transitions i {
+    height: 175px;
+    width: 221px;
+    vertical-align: bottom;
+    display: inline-block
+}
+
+.landing-page .container_body .feature-set li.click-or-hover i {
+    background-position: 0 -1400px
+}
+
+.landing-page .container_body .feature-set li.gestures-for-transitions i {
+    background-position: 0 -6347px
+}
+
+.landing-page .container_body .feature-set li.animations-for-interactivity i {
+    display: inline-block;
+    height: 176px;
+    width: 127px;
+    background-position: 0 -749px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.in-browser i {
+    display: inline-block;
+    height: 175px;
+    width: 221px;
+    background-position: 0 -7471px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.iphone i {
+    display: inline-block;
+    height: 138px;
+    width: 72px;
+    background-position: 0 -8206px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.realtime i {
+    display: inline-block;
+    height: 174px;
+    width: 215px;
+    background-position: 0 -12515px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.gestures-apple i,
+.landing-page .container_body .feature-set li.transitions-apple i {
+    height: 175px;
+    vertical-align: bottom;
+    display: inline-block
+}
+
+.landing-page .container_body .feature-set li.gestures-apple i {
+    width: 191px;
+    background-position: 0 -5972px
+}
+
+.landing-page .container_body .feature-set li.transitions-apple i {
+    width: 126px;
+    background-position: 0 -14289px
+}
+
+.landing-page .container_body .feature-set li.ipad i {
+    display: inline-block;
+    height: 160px;
+    width: 115px;
+    background-position: 0 -7846px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.clickable-prototypes i,
+.landing-page .container_body .feature-set li.comments i,
+.landing-page .container_body .feature-set li.conversations i,
+.landing-page .container_body .feature-set li.present-on-device i {
+    height: 175px;
+    background-image: url(../images/how-it-works.png);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    display: inline-block
+}
+
+.landing-page .container_body .feature-set li.clickable-prototypes i {
+    width: 221px;
+    background-position: 0 -1775px
+}
+
+.landing-page .container_body .feature-set li.present-on-device i {
+    width: 252px;
+    background-position: 0 -11766px
+}
+
+.landing-page .container_body .feature-set li.comments i,
+.landing-page .container_body .feature-set li.conversations i {
+    width: 244px
+}
+
+.landing-page .container_body .feature-set li.comments i {
+    background-position: 0 -2525px
+}
+
+.landing-page .container_body .feature-set li.conversations i {
+    background-position: 0 -2900px
+}
+
+.landing-page .container_body .feature-set li.daily-digest i {
+    display: inline-block;
+    height: 174px;
+    width: 215px;
+    background-position: 0 -3650px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.comment-feed i {
+    display: inline-block;
+    height: 175px;
+    width: 221px;
+    background-position: 0 -2150px;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.activity-feed i {
+    display: inline-block;
+    height: 174px;
+    width: 215px;
+    background-position: 0 0;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.all-projects i,
+.landing-page .container_body .feature-set li.development i,
+.landing-page .container_body .feature-set li.support i {
+    height: 175px;
+    vertical-align: bottom;
+    display: inline-block
+}
+
+.landing-page .container_body .feature-set li.all-projects i {
+    width: 221px;
+    background-position: 0 -374px
+}
+
+.landing-page .container_body .feature-set li.development i {
+    width: 244px;
+    background-position: 0 -4024px
+}
+
+.landing-page .container_body .feature-set li.support i {
+    width: 215px;
+    background-position: 0 -13264px
+}
+
+.landing-page .container_body .feature-set li.marketing i {
+    display: inline-block;
+    height: 180px;
+    width: 258px;
+    background-image: url(../images/how-it-works.png);
+    background-position: 0 -9194px;
+    background-repeat: no-repeat;
+    vertical-align: bottom
+}
+
+.landing-page .container_body .feature-set li.full-screen-viewing i,
+.landing-page .container_body .feature-set li.mobile-skins i {
+    height: 175px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url(../images/how-it-works.png);
+    background-repeat: no-repeat
+}
+
+.landing-page .container_body .feature-set li.full-screen-viewing i {
+    width: 215px;
+    background-position: 0 -5597px
+}
+
+.landing-page .container_body .feature-set li.mobile-skins i {
+    width: 192px;
+    background-position: 0 -9574px
+}
+
+.landing-page .container_body .feature-set li.download-as-app i,
+.landing-page .container_body .feature-set li.sms-or-email i,
+.landing-page .container_body .feature-set li.view-in-mobile-browser i {
+    height: 175px;
+    width: 92px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url(../images/how-it-works.png);
+    background-repeat: no-repeat
+}
+
+.landing-page .container_body .feature-set li.sms-or-email i {
+    background-position: 0 -12889px
+}
+
+.landing-page .container_body .feature-set li.view-in-mobile-browser i {
+    background-position: 0 -15039px
+}
+
+.landing-page .container_body .feature-set li.download-as-app i {
+    background-position: 0 -4399px
+}
+
+.landing-page .container_body .feature-set li.group-voice-chat i,
+.landing-page .container_body .feature-set li.real-time-sketching i {
+    display: inline-block;
+    height: 174px;
+    width: 215px;
+    vertical-align: bottom;
+    background-image: url(../images/how-it-works.png);
+    background-repeat: no-repeat
+}
+
+.landing-page .container_body .feature-set li.real-time-sketching i {
+    background-position: 0 -12141px
+}
+
+.landing-page .container_body .feature-set li.group-voice-chat i {
+    background-position: 0 -7097px
+}
+
+.landing-page .container_body .feature-set.plus-seperators {
+    position: relative
+}
+
+.landing-page .container_body .feature-set.plus-seperators li {
+    float: left;
+    display: block;
+    margin-right: 3.125%;
+    width: 31.25%
+}
+
+.landing-page .container_body .feature-set.plus-seperators li:last-child,
+.landing-page .container_body .feature-set.plus-seperators li:nth-child(5n) {
+    margin-right: 0
+}
+
+.landing-page .container_body .feature-set.plus-seperators li.plus-sign {
+    position: absolute;
+    text-indent: -9999em;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    background-image: url(../images/plus-sign.png);
+    background-repeat: no-repeat;
+    width: 52px;
+    font-size: 120px;
+    font-weight: 100;
+    color: #f36;
+    left: 30%;
+    top: 77px;
+    margin: 0;
+    padding: 0
+}
+
+.landing-page .container_body .feature-set.plus-seperators li.plus-sign.two {
+    left: auto;
+    right: 30%
+}
+
+.landing-page .container_body .feature-set.plus-seperators .in-browser+.plus-sign {
+    margin-left: 40px
+}
+
+.landing-page .container_body .feature-set.plus-seperators .ipad+.plus-sign,
+.landing-page .container_body .feature-set.plus-seperators .iphone+.plus-sign,
+.landing-page .container_body .feature-set.plus-seperators .on-android-tablet+.plus-sign {
+    margin-right: 25px
+}
+
+.landing-page .container_body .more-features h2 {
+    margin-bottom: 98px
+}
+
+.landing-page .container_body .more-features ul {
+    width: 916px;
+    margin: 0 auto
+}
+
+.landing-page .container_body .more-features ul li {
+    float: left;
+    display: block;
+    margin-right: 10%;
+    width: 45%;
+    height: 222px
+}
+
+.landing-page .container_body .more-features ul li:last-child,
+.landing-page .container_body .more-features ul li:nth-child(2n) {
+    margin-right: 0
+}
+
+.landing-page .container_body .more-features ul li h3,
+.landing-page .container_body .more-features ul li p {
+    text-align: left;
+    font-size: 15px
+}
+
+.landing-page .container_body .more-features ul li p {
+    line-height: 28px
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Account | Critico</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="#52BAD5" name="msapplication-TileColor">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/theone.css">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/pages.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" href="../../css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/app/app-main.css" media="screen" />
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Fonts -->
+<script src="https://use.fontawesome.com/03f81593ac.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto" rel="stylesheet">
+<script src="/release/11.7.1016/js/dojo/mccommon.js"></script>
+
+<script type="text/javascript" src="/release/11.7.1016/js/swfobject.js"></script>
+
+</head>
+
+<body class="mcd   relative full-height-vh flex flex-col overflow-hidden">
+    <div class="novip">
+        <div data-dojo-type="mojo/widgets/MainNavigation" class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0">
+            <div class="line selfclear">
+                <% include ../../partials/app/dashboard-nav %>
+            </div>
+        </div>
+        
+    <div id="wrap" class="wrap flex overflow-auto-y overflow-hidden-x">
+        <div id="main-content" class="main-content mc-content flex flex-col selfclear">
+            <div class="lastUnit size1of1 overflow-visible flex-shrink-none">
+                <div id="av-flash-block" class="c-flashBlock"> </div>
+            </div>
+            <div role="main" id="content" class="content selfclear relative">
+                <div class="lastUnit size1of1 header account">
+                    <h1><%= user.company %></h1>
+                    <h4><%= user.email %></h4>
+                </div>
+                <div class="line local-nav-container">
+                    <div class="lastUnit size1of1">
+                        <div>
+                            <p class="c-menuBarToggle !margin--lv0 full-width padding--lv2 border-top border-bottom font-weight--bold cursor-pointer"> Navigation <span class="freddicon menu-down float-right" role="presentation" aria-hidden="true"></span> </p>
+                            <% include ../../partials/app/profile-nav %>
+                        </div>
+                    </div>
+                </div>
+                <div class="line section">
+                    <div class="lastUnit size1of2 section">
+                        <h3>Marketo Integration</h3>
+                        <form action="" id="details_form" method="POST" novalidate="novalidate" style="display: block">
+                            <label for="account-name" class="">Client ID</label>
+                            <div class="field-wrapper">
+                                <input id="account-name" type="text" name="account_name" class=" av-text" value="">
+                            </div>
+                            <label for="account-name" class="">Client Secret</label>
+                            <div class="field-wrapper">
+                                <input id="account-name" type="text" name="account_name" class=" av-text" value="">
+                            </div> 
+                            <label for="account-name" class="">REST API Endpoint URL</label>
+                            <div class="field-wrapper">
+                                <input id="account-name" type="text" name="account_name" class=" av-text" value="">
+                            </div> 
+                            <input type="submit" class="button p0" value="Update"></div>
+                            <input type="hidden" name="__csrf_token" id="" value="d6143341699caed9fa502443ae2a69b7ea424da4" class="av-hidden">
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

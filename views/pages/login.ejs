@@ -1,0 +1,87 @@
+<% include ../partials/header %>
+<link rel="stylesheet" type="text/css" media="all" href="css/login.css" />
+
+<body>
+	<div class="main-panel">
+		<div class="main-panel__table">
+			<div class="main-panel__table-cell">
+			    <a href="/">
+			    <div class="main-panel__logo">
+				</div></a>
+				<div class="main-panel__switch">
+					<span class="main-panel__switch__text">
+						Don't have an account?
+					</span>
+					<a href="/register" class="main-panel__switch__button">
+						Get Started
+					</a>
+				</div>
+					<div class="main-panel__content">
+						<h1 class="main-panel__heading">
+							Sign in to Critico.
+							<small class="main-panel__subheading" id="login_subheading">
+								Enter your credentials below.
+							</small>
+						</h1>
+						<form class="main-panel__form" action="/login.php" method="post" id="login-form" novalidate>
+							<div class="form__group">
+								<label for="email" class="form__label">Email Address</label>
+								<input id="email" type="email" name="email" class="form__input" placeholder="yourname@xyzdomain.com" value="" />
+							</div>
+							<div class="form__group login_pw">
+								<label for="password" class="form__label">Password</label>
+								<input id="password" type="password" class="form__input" name="password" placeholder="Enter your password" />
+								<a href="/forgot-password" class="form__help">Forgot password?</a>
+							</div>
+							<div class="text--center">
+								<button class="form__button">Sign in</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+
+$(document).ready(function(){
+	$("#login-form").submit(function (e) {
+		e.preventDefault();
+	    var form = $("#login-form");
+    	var emailaddress = $("#email").val();
+    	var password = $("#password").val();
+
+    	$.ajax({
+        type: "POST",
+        url: "/login.php",
+        data:JSON.stringify({'emailaddress':emailaddress, 'password':password, 'username':emailaddress}),
+        contentType: 'application/json',
+        dataType: 'JSON',
+        complete: function(response) {
+        	var data_response = response.responseText;
+        	if (data_response.indexOf("email") >= 0) {
+        		$('#email').addClass('border_glow_small');
+        		$('#password').removeClass('border_glow_small');
+        		$('#login_subheading').text('Oops! Please enter a valid email address.');
+        	}
+        	else if (data_response.indexOf("password") >= 0) {
+        		$('#email').removeClass('border_glow_small');
+        		$('#password').addClass('border_glow_small');
+        		$('#login_subheading').text('Oops! Please enter a valid password');
+        	}
+        	else if (data_response.indexOf("invalid") >= 0) {
+        		$('#email').addClass('border_glow_small');
+        		$('#password').addClass('border_glow_small');
+        		$('#login_subheading').text('Oops! Please check your credentials and try again');
+        	}
+        	else {
+        		window.location.href = data_response;
+        	}
+        	
+        }     
+    	});
+	});
+});
+</script>

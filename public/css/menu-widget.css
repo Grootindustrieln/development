@@ -1,0 +1,69 @@
+/**
+ * public-facing css for multi-panel-menu-widget plugin
+ */
+
+/**
+* Prevents unslider from setting too small width on the slider
+* due to li.widget having padding that we need
+*/
+
+
+
+.widget.widget_multipanel_menus div.multipanel-menus-outer {
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.widget.widget_multipanel_menus div.multipanel-menus-unslider {
+}
+
+.widget.widget_multipanel_menus div.multipanel-menus-unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget.widget_multipanel_menus div.multipanel-menus-outer div.multipanel-menus-unslider > ul > li {
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: left;
+}
+
+.widget.widget_multipanel_menus div.multipanel-menus-outer div.multipanel-menus-unslider > ul > li > ul {
+  margin: 0;
+}
+
+.widget.widget_multipanel_menus div.multipanel-menus-outer div.multipanel-menus-unslider > ul > li a {
+
+}
+
+div.multipanel-menus-unslider ol.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+div.multipanel-menus-unslider ol.dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #d6eeff;
+  cursor: pointer;
+}
+
+div.multipanel-menus-unslider ol.dots li.active {
+  background: #a2d7ff;
+}
+0

@@ -1,0 +1,18 @@
+				<nav>
+					<div class="main-logo-wrapper">
+						<a href="/">critico</a>
+					</div>
+					<ul class="disable-select">
+						<li><a href="/how-it-works">How it Works</a></li>
+						<li><a href="/pricing" title="">Pricing</a></li>
+						<li><a href="/pricing#faq" title="">FAQ</a></li>
+						<% if (user) { %>
+						<li><a href="/logout">Logout</a></li>
+						<li class="signup"><a href="/app/dashboard">Dashboard</a></li>
+						<% } else { %>
+						<li><a href="/login">Login</a></li>
+						<li class="signup"><a href="/register">Get Started</a></li>
+						<% } %>
+					</ul>
+				</nav>
+				

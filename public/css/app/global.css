@@ -1,0 +1,23 @@
+
+
+
+/*** Reset ***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; }
+
+html { width: 100%; }
+body { width: 100%; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; -webkit-font-smoothing: subpixel-antialiased; transform: translate3d(0, 0, 0); }
+
+/*** global styles ***/
+.mainColor { color: #b4b77c!important; }
+.light { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif}
+.semi_bold { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif }
+.font-bold { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif }
+.regular {font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif; }
+.disable_selection {  -webkit-user-select: none; -moz-user-select: none; }
+#sidebar a, .notificationDemoLink { text-decoration: none; }
+.hidden { display: none; }
+
+#frame *:focus { outline: none; }
+
+.clear-fix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clear-fix { zoom: 1; }

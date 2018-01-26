@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Account | Critico</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="#52BAD5" name="msapplication-TileColor">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/theone.css">
+<link rel="stylesheet" type="text/css" href="/release/11.7.1016/css/less/pages.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" href="../../css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/app/app-main.css" media="screen" />
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Fonts -->
+<script src="https://use.fontawesome.com/03f81593ac.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto" rel="stylesheet">
+<script src="/release/11.7.1016/js/dojo/mccommon.js"></script>
+
+<script type="text/javascript" src="/release/11.7.1016/js/swfobject.js"></script>
+
+</head>
+
+<body class="mcd   relative full-height-vh flex flex-col overflow-hidden">
+    <div class="novip">
+        <div data-dojo-type="mojo/widgets/MainNavigation" class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0">
+            <div class="line selfclear">
+                <% include ../../partials/app/dashboard-nav %>
+            </div>
+        </div>
+        
+    <div id="wrap" class="wrap flex overflow-auto-y overflow-hidden-x">
+        <div id="main-content" class="main-content mc-content flex flex-col selfclear">
+            <div class="lastUnit size1of1 overflow-visible flex-shrink-none">
+                <div id="av-flash-block" class="c-flashBlock"> </div>
+            </div>
+            <div role="main" id="content" class="content selfclear relative">
+                <div class="lastUnit size1of1 header account">
+                    <h1><%= company.name %></h1>
+                    <h4><%= user.emailaddress %></h4>
+                </div>
+                <div class="line local-nav-container">
+                    <div class="lastUnit size1of1">
+                        <div>
+                            <p class="c-menuBarToggle !margin--lv0 full-width padding--lv2 border-top border-bottom font-weight--bold cursor-pointer"> Navigation <span class="freddicon menu-down float-right" role="presentation" aria-hidden="true"></span> </p>
+                            <% include ../../partials/app/profile-nav %>
+                        </div>
+                    </div>
+                </div>
+                <div class="line section">
+                    <div class="lastUnit size1of2 section">
+                        <h3>Some Details</h3>
+                        <form action="/account/details-post" id="details_form" method="POST" novalidate="novalidate"> <label for="account-name" class="">Account name</label>
+                            <div class="field-wrapper"> <input id="account-name" type="text" placeholder="Acme Inc." name="account_name" class=" av-text" value="<%= user.company %>"> </div> <label for="default-timezone" class="">Time zone</label>
+                            <div class="field-wrapper">
+                            <select id="default-timezone" name="defaults[timezone_id]" maxheight="-1" class="full-width "><option value="Pacific/Tarawa" >(GMT +12:00) Tarawa</option><option value="Pacific/Auckland" >(GMT +12:00) New Zealand Time</option><option value="Pacific/Norfolk" >(GMT +11:30) Norfolk Island (Austl.)</option><option value="Pacific/Noumea" >(GMT +11:00) Noumea, New Caledonia</option><option value="Australia/Sydney" >(GMT +10:00) Australian Eastern Time (Sydney)</option><option value="Australia/Queensland" >(GMT +10:00) Australian Eastern Time (Queensland)</option><option value="Australia/Adelaide" >(GMT +9:30) Australian Central Time (Adelaide)</option><option value="Australia/North" >(GMT +9:30) Australian Central Time (Northern Territory)</option><option value="Asia/Tokyo" >(GMT +9:00) Tokyo</option><option value="Australia/West" >(GMT +8:00) Australian Western Time</option><option value="Asia/Hong_Kong" >(GMT +8:00) Hong Kong</option><option value="Asia/Bangkok" >(GMT +7:00) Thailand (Bangkok)</option><option value="Asia/Jakarta" >(GMT +7:00) Western Indonesian Time (Jakarta)</option><option value="Asia/Dhaka" >(GMT +6:00) Bangladesh (Dhaka)</option><option value="Asia/Calcutta" >(GMT +5:30) India</option><option value="Asia/Kabul" >(GMT +4:30) Afghanistan (Kabul)</option><option value="Asia/Tashkent" >(GMT +5:00) Uzbekistan (Tashkent)</option><option value="Asia/Dubai" >(GMT +4:00) UAE (Dubai)</option><option value="Europe/Moscow" >(GMT +3:00) Moscow</option><option value="Asia/Tehran" >(GMT +4:30) Tehran</option><option value="Africa/Djibouti" >(GMT +3:00) Djibouti</option><option value="Europe/Minsk" >(GMT +3:00) Minsk</option><option value="Africa/Cairo" >(GMT +2:00) Cairo</option><option value="EET" >(GMT +2:00) Eastern European Time</option><option value="CET" >(GMT +1:00) Central European Time</option><option value="WET" >(GMT 0:00) Western European Time</option><option value="Europe/Lisbon" >(GMT +1:00) Western European Time (Lisbon)</option><option value="Europe/London" >(GMT +1:00) British Time (London)</option><option value="GMT" >(GMT 0:00) Greenwich Mean Time</option><option value="Iceland" >(GMT 0:00) Western European Time (Iceland)</option><option value="America/Scoresbysund" >(GMT 0:00) Eastern Greenland Time</option><option value="America/Sao_Paulo" >(GMT -3:00) Eastern Brazil</option><option value="America/Godthab" >(GMT -2:00) Central Greenland Time</option><option value="America/Thule" >(GMT -3:00) Western Greenland Time</option><option value="Canada/Newfoundland" >(GMT -2:30) Newfoundland Time</option><option value="America/Buenos_Aires" >(GMT -3:00) Buenos Aires</option><option value="Atlantic/Bermuda" >(GMT -3:00) Atlantic Time (Bermuda)</option><option value="Brazil/West" >(GMT -4:00) Atlantic Time</option><option value="VET" >(GMT -4:30) Venezuelan Standard Time</option><option value="US/Eastern" selected="selected">(GMT -4:00) Eastern Time</option><option value="US/East-Indiana" >(GMT -4:00) Eastern Time (Indiana)</option><option value="US/Central" >(GMT -5:00) Central Time</option><option value="America/Monterrey" >(GMT -5:00) Central Time (Mexico City, Monterrey)</option><option value="Canada/Saskatchewan" >(GMT -6:00) Central Time (Saskatchewan)</option><option value="US/Mountain" >(GMT -6:00) Mountain Time</option><option value="US/Arizona" >(GMT -7:00) Mountain Time (Arizona)</option><option value="US/Pacific" >(GMT -7:00) Pacific Time</option><option value="US/Alaska" >(GMT -8:00) Alaska Time</option><option value="US/Hawaii" >(GMT -10:00) Hawaiian/Aleutian Time</option></select>
+                                <div class="field-help always-show">When you schedule campaigns, we'll use this time zone as a reference.</div>
+                            </div> <label>Date/time format</label>
+                            <div class="field-wrapper"> <select name="defaults[date_format]" data-dojo-type="dijit/form/Select" maxheight="-1" class="full-width lowercase " id="defaults[date_format]"><option value="US" selected="selected">mm/dd/yyyy 12 hour</option><option value="US24" >mm/dd/yyyy 24 hour</option><option value="UK" >dd/mm/yyyy 12 hour</option><option value="UK24" >dd/mm/yyyy 24 hour</option></select>                                </div> <label>Currency format</label>
+                            <div class="field-wrapper"> <select name="defaults[currency_locale]" data-dojo-type="dijit/form/Select" maxheight="-1" class="full-width " id="defaults[currency_locale]"><option value="en_US" selected="selected">1,234.56</option><option value="de_DE" >1.234,56</option><option value="fr_FR" >1 234,56</option></select>                                </div> <input type="submit" class="button p0" value="save" onclick="mojo.utils.toggleButtonLoadingState(this);"> <input type="hidden" name="__csrf_token" id="" value="d6143341699caed9fa502443ae2a69b7ea424da4" class="av-hidden"></form>
+                    </div>
+                </div>
+
+                <div class="lastUnit size1of2">
+                    <form action="/account/contact-prefs-post" method="POST" novalidate="novalidate">
+                        <div class="sub-section">
+                            <h3>More about your company</h3>
+                            <div class="field-wrapper">
+                            <label for="info-business-type" class="">Your industry</label> 
+                            <select name="info[business_type]" id="info-business-type" maxheight="-1" class=""> <option value="" selected="selected">Please specify &hellip;</option> <option value="Agriculture and Food Services" >Agriculture and Food Services</option><option value="Architecture and Construction" >Architecture and Construction</option><option value="Arts and Artists" >Arts and Artists</option><option value="Beauty and Personal Care" >Beauty and Personal Care</option><option value="Business and Finance" >Business and Finance</option><option value="Computers and Electronics" >Computers and Electronics</option><option value="Construction" >Construction</option><option value="Consulting" >Consulting</option><option value="Creative Services/Agency" >Creative Services/Agency</option><option value="Daily Deals/E-Coupons" >Daily Deals/E-Coupons</option><option value="eCommerce" >eCommerce</option><option value="Education and Training" >Education and Training</option><option value="Entertainment and Events" >Entertainment and Events</option><option value="Gambling" >Gambling</option><option value="Games" >Games</option><option value="Government" >Government</option><option value="Health and Fitness" >Health and Fitness</option><option value="Hobbies" >Hobbies</option><option value="Home and Garden" >Home and Garden</option><option value="Insurance" >Insurance</option><option value="Legal" >Legal</option><option value="Manufacturing" >Manufacturing</option><option value="Marketing and Advertising" >Marketing and Advertising</option><option value="Media and Publishing" >Media and Publishing</option><option value="Medical, Dental, and Healthcare" >Medical, Dental, and Healthcare</option><option value="Mobile" >Mobile</option><option value="Music and Musicians" >Music and Musicians</option><option value="Non-Profit" >Non-Profit</option><option value="Pharmaceuticals" >Pharmaceuticals</option><option value="Photo and Video" >Photo and Video</option><option value="Politics" >Politics</option><option value="Professional Services" >Professional Services</option><option value="Public Relations" >Public Relations</option><option value="Real Estate" >Real Estate</option><option value="Recruitment and Staffing" >Recruitment and Staffing</option><option value="Religion" >Religion</option><option value="Restaurant and Venue" >Restaurant and Venue</option><option value="Retail" >Retail</option><option value="Social Networks and Online Communities" >Social Networks and Online Communities</option><option value="Software and Web App" >Software and Web App</option><option value="Sports" >Sports</option><option value="Telecommunications" >Telecommunications</option><option value="Travel and Transportation" >Travel and Transportation</option><option value="Vitamin Supplements" >Vitamin Supplements</option><option value="Other" >Other</option> </select>                                </div>
+                            <div class="field-wrapper"> <label for="info-company-size" class="">How many people are in your organization?</label> <select name="info[company_size]" id="info-company-size" data-dojo-type="dijit/form/Select" class=""> <option value="" selected="selected">Select</option> <option value="1-5" >1-5</option><option value="6-10" >6-10</option><option value="11-20" >11-20</option><option value="21-50" >21-50</option><option value="51-100" >51-100</option><option value="101-150" >101-150</option><option value="150-300" >150-300</option><option value="301-500" >301-500</option><option value="501-1000" >501-1000</option><option value="1000+" >1000+</option> </select>                                </div>
+                            <div class="field-wrapper"> <label for="info-company-age" class="">How old is your organization?</label> <select name="info[company_age]" id="info-company-age" data-dojo-type="dijit/form/Select" class=""> <option value="&lt;1" >&lt; 1 year</option><option value="1-2" >1-2 years</option><option value="3-5" >3-5 years</option><option value="6-10" >6-10 years</option><option value="11+" >11+ years</option> </select>                                </div> <input type="submit" class="button p0" value="save" onclick="mojo.utils.toggleButtonLoadingState(this);"> </div> <input type="hidden" name="__csrf_token" id="" value="d6143341699caed9fa502443ae2a69b7ea424da4" class="av-hidden"></form>
+                    <form action="/account/contact-prefs-post" data-mojo-challenge="true" method="POST" novalidate="novalidate">
+                        <div class="sub-section">
+                            <h3 id="email-notifications">Communications</h3>
+                            <p>I'd like to receive the following emails:</p>
+                            <div class="field-wrapper">
+                                <label for="info[weekly_status_email]" class="checkbox">
+                                    <input type="checkbox" class="av-checkbox" name="info[weekly_status_email]" value="Y" id="info[weekly_status_email]" checked>
+                                    New Content and Company Updates
+                                </label>
+                            </div>
+                            <input type="submit" class="button p0" value="save"></div> <input type="hidden" name="__csrf_token" id="" value="d6143341699caed9fa502443ae2a69b7ea424da4" class="av-hidden"></form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
