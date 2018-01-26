@@ -2,8 +2,8 @@
   "name": "critico.io",
   "version": "0.0.2",
   "private": true,
-  "author": "Jeffrey Brown, Brent Levi, and Chris Wolf",
-  "main": "app.js",
+  "author": "Jeffrey Allan Brown",
+  "main": "node app.js",
   "engines": {
     "node": ">7.0.0"
   },
