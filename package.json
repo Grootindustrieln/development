@@ -19,6 +19,7 @@
     "connect-flash": "*",
     "connect-form": "*",
     "cookie-parser": "*",
+    "dotenv": "^4.0.0",
     "ejs": "*",
     "express": "*",
     "express-messages": "*",
@@ -28,9 +29,8 @@
     "hubspot": "*",
     "knex": "*",
     "mailgun-js": "*",
-    "morgan": "*",
     "mongodb": "*",
-    "pg": "*",
+    "morgan": "*",
     "multer": "*",
     "nodemailer": "*",
     "nodemailer-mailgun-transport": "*",
@@ -39,6 +39,8 @@
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
+    "pg": "^7.4.1",
+    "pg-connection-string": "^2.0.0",
     "socket.io": "*"
   }
 }

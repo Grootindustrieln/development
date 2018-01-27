@@ -1,3 +1,4 @@
+require('dotenv').config();
 var Client = require('hubspot');
 var client = new Client();
 var async = require('async');
