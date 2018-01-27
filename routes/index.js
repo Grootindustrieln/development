@@ -317,8 +317,9 @@ router.post('/save-email-template', function(req, res) {
   res.render('pages/app/dashboard', { user: req.user, company: req.company });
 });
 
+
 // set apikey for hubspot crm connection
-client.useKey('5f2a0694-8935-46a4-b347-6495adeadf85');
+// client.useKey('5f2a0694-8935-46a4-b347-6495adeadf85');
 
 // footer signup form handling and push to hubspot crm
 router.post('/php/signup.php',function(req,res){
