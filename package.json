@@ -29,6 +29,7 @@
     "knex": "*",
     "mailgun-js": "*",
     "morgan": "*",
+    "mongodb":"*",
     "pg":"*",
     "knex":"*",
     "multer": "*",
