@@ -21,7 +21,11 @@ const knex = require('knex')({
   },
   pool: { min: 1, max: 10 }
 });
-const local = require('../config/local'); 
+
+
+
+
+const local = require('../config/local');
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
